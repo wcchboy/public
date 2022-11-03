@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
+        <option name="delegatedBuild" value="false" /><!--中文乱码 -->
       </GradleProjectSettings>
     </option>
   </component>

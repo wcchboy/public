@@ -1,0 +1,1 @@
+删除 /data/data/com.android.chrome/app_chrome/Default/History 和 /data/data/com.android.chrome/app_tabs  目录即可清除记录及打开的TAB。需要重启APP验证
