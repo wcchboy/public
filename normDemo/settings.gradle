@@ -1,3 +1,4 @@
+/*
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -13,4 +14,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "NormDemo"
+include ':app'
+*/
 include ':app'

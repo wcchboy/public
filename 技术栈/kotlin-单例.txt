@@ -1,0 +1,37 @@
+1.
+companion object {
+        val sIntance by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
+            UsbDisplayManager()
+        }
+    }
+
+2.
+ companion object {
+	fun getInstance(mContext: Context) = InstanceHelper.sSingle
+}
+object InstanceHelper {
+        val sSingle = UsbDisplayManager()
+    }
+
+
+3.
+
+//单例中不能传入context 会内存泄漏。
+class A private constructor(mContext: Context){
+
+    private var mContext: Context = mContext
+
+    companion object {
+        @Volatile
+        var instance:A? = null
+        fun getInstance(mContext: Context) :A{
+            if (instance == null) {
+                synchronized(A::class) {
+                    if (instance == null) {
+                        instance = A(mContext)
+                    }
+                }
+            }
+            return instance!!
+        }
+    }

@@ -1,14 +1,12 @@
 package com.wcch.android.environment;
 
-import android.text.TextUtils;
-import android.util.Log;
-
 /**
  * ============================
  * Auther：wcch
  * Date：2022/10/30
  * Describe：
  * =============================
+ * @author admin
  */
 public class EnvironmentManager {
 

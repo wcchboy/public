@@ -1,20 +1,22 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
 
 android {
-    namespace 'com.wcch.android.norm'
-    compileSdk 33
+    compileSdkVersion 29
 
     defaultConfig {
-        applicationId "com.wcch.android.norm"
-        minSdk 26
-        targetSdk 33
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
+        applicationId "com.wcch.android"
+        minSdkVersion 26
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
     lintOptions {
         abortOnError false
@@ -48,7 +50,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'org.apache.httpcomponents:httpcore:4.4.4'
 
-    implementation 'com.alibaba:fastjson:2.0.3.android'
+    //implementation 'com.alibaba:fastjson:2.0.3.android'
+    implementation 'com.alibaba:fastjson:1.1.55.android'
     implementation 'com.google.code.gson:gson:2.8.0'
     //implementation 'com.blankj:utilcode:1.25.9'
     // if u use AndroidX, use the following
@@ -112,7 +115,21 @@ dependencies {
     testImplementation("android.arch.persistence.room:testing:$room_ver") {
         exclude group: 'com.android.support'
     }*/
+    // -----1----
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
+    // -----2----
+    // 协程核心库
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1"
+    // 协程 Android 支持库
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
+
+    // -----3----
+    // lifecycle 对于协程的扩展封装
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
 
 
 }
