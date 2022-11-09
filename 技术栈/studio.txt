@@ -1,0 +1,8 @@
+自定义todo
+ settings - editor- live templates-androidComments
+ 增加一列，具体参数可以参考 todo
+ abbreviation 输入什么提示该方法
+ edit variables 里面可以指定 date todo的值
+ // TODO: $date$ $todo$ 
+ 在最下面的define 点击进去，选择支持的开发语言
+ 完成
