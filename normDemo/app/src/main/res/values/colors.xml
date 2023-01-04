@@ -2,4 +2,198 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="icon_8_title">#333333</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="app_bg">#FFF6F6F6</color>
+    <color name="share_gap_line">#e0e0e0</color>
+
+    <!--common color-->
+    <color name="common_color_a">#FF333333</color>
+    <color name="common_color_b">#FF565656</color>
+    <color name="common_color_c">#FF767676</color>
+    <color name="common_color_d">#FFDDDDDD</color>
+    <color name="common_color_e">#FF3633</color>
+    <color name="common_color_f">#21CE99</color>
+    <color name="common_color_g">#3266B8</color>
+    <color name="common_color_h">#008A25</color>
+    <color name="common_color_i">#D9350D</color>
+    <color name="common_color_j">#936E4D</color>
+    <color name="common_color_k">#AC8362</color>
+    <color name="common_color_l">#FFFFFF</color>
+    <color name="common_color_l_60">#99FFFFFF</color>
+    <color name="common_color_m">#F7F7F7</color>
+    <color name="common_color_n">#5995EF</color>
+    <color name="common_color_o">#F5A623</color>
+    <color name="common_color_p">#F95A56</color>
+    <color name="common_color_q">#FF8320</color>
+    <color name="common_color_r">#7ED321</color>
+    <color name="common_color_s">#FF4A49</color>
+    <color name="common_color_t">#15AB7D</color>
+    <color name="common_color_w">#FFFFFFFF</color>
+    <color name="common_color_v">#969696</color>
+    <color name="common_color_u">#D8C9AC</color>
+
+    <color name="color_a1">#3A3A3A</color>
+    <color name="color_c1">#929292</color>
+    <color name="color_d1">#D0D0D0</color>
+    <color name="color_h1">#00C434</color>
+
+    <color name="securities_title_bar">#383838</color>
+
+    <!--setting-->
+    <color name="common_bar_bottom_divider">#EEEEEE</color>
+    <color name="common_bar_bottom_back">#F8F8F8</color>
+    <color name="common_item_divider">#E4E4E4</color>
+    <color name="settings_background_gray">#F6F6F6</color>
+    <!--setting end-->
+
+    <color name="white">#ffffff</color>
+    <color name="font_selected">#333</color>
+    <color name="font_normal">#333333</color>
+    <color name="font_light">#767676</color>
+    <color name="font_title_menu">#0088ff</color>
+    <color name="line_color">#e7e7e7</color>
+
+    <!--<color name="font_selected">#333</color>-->
+    <!--<color name="font_normal">#333333</color>-->
+    <!--<color name="font_light">#767676</color>-->
+    <!--<color name="font_title_menu">#0088FF</color>-->
+
+    <color name="font_title">#333333</color>
+    <color name="font_subTitle">#565656</color>
+    <color name="font_content">#767676</color>
+    <color name="font_unusable">#CCCCCC</color>
+    <color name="font_white">#FFFFFF</color>
+
+    <color name="font_special_blue">#3266B8</color>
+    <color name="font_special_green">#008A25</color>
+    <color name="font_special_red">#D9350D</color>
+    <color name="font_special_darkBrown">#936E4D</color>
+    <color name="font_special_lightBrown">#AC8362</color>
+    <color name="font_equity_red">#FF3633</color>
+    <color name="font_equity_green">#21CE99</color>
+
+    <color name="view_blue">#5995EF</color>
+    <color name="view_gray">#F7F7F7</color>
+    <color name="view_brown">#F5A623</color>
+    <color name="view_red">#F95A56</color>
+    <color name="view_orange">#FF8320</color>
+    <color name="view_lightGreen">#7ED321</color>
+    <color name="view_equity_red">#FF4A49</color>
+    <color name="view_equity_green">#15AB7D</color>
+
+
+    /***************/
+    <color name="lvDividerLine">#d9e3e8</color>
+    <color name="bg_biometric_prompt_dialog">#99000000</color>
+    <color name="blue">#6699ff</color>
+    <color name="warning_dialog_content_color">#888866</color>
+    /***************/
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="keyboard_bg">#BDBDBD</color>
+    <color name="iv_back_bg">#F5F5F5</color>
+    <color name="key_normal_bg">#F5F5F5</color>
+    <color name="key_pressed_bg">#33000000</color>
+    <color name="btn_gray">#E0E0E0</color>
+    <color name="pwd_color">#999999</color>
+    <color name="h5_default_titlebar_color">#1976d2</color>
+
+
+    <!--qrcode-->
+    <color name="result_points">#c099cc00</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="c_light_gray">#929292</color>
+    <color name="qr_code_blue">#1085EE</color>
+    <color name="black_bg_50">#80000000</color>
+    <color name="black_bg_70">#B3000000</color>
+
+
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+    <!-- 3.0顏色 -->
+    <color name="a_black">#383838</color>
+    <!--标注色号-->
+    <color name="color_a">#333333</color>
+    <color name="color_b">#565656</color>
+    <color name="color_c">#767676</color>
+    <color name="color_d">#CCCCCC</color>
+    <color name="color_e">#FF3633</color>
+    <color name="color_f">#21CE99</color>
+    <color name="color_g">#3266B8</color>
+    <color name="color_h">#008A25</color>
+    <color name="color_i">#D9350D</color>
+    <color name="color_j">#936E4D</color>
+    <color name="color_k">#AC8362</color>
+    <color name="color_l">#FFFFFF</color>
+    <color name="color_m">#F7F7F7</color>
+    <color name="color_n">#5995EF</color>
+    <color name="color_o">#F5A623</color>
+    <color name="color_p">#F95A56</color>
+    <color name="color_q">#FF8320</color>
+    <color name="color_r">#7ED321</color>
+    <color name="color_s">#FF4A49</color>
+    <color name="color_t">#15AB7D</color>
+    <color name="color_w">#FFFFFF</color>
+    <color name="color_ff">#53e3db</color>
+    <color name="color_ww">#f95b5b</color>
+    <color name="color_ee">#85b3e3</color>
+
+
+    <color name="white_divider">#EEEEEE</color>
+    <color name="d_white">#FFFFFF</color>
+    <color name="b_dark_gray">#565656</color>
+    <color name="light_gray">#CCCCCC</color>
+
+    <color name="account_opening_progress_gray_txt">#767676</color>
+
+    <color name="progress_bar_start">#54B8F4</color>
+    <color name="progress_bar_middle">#5B7EEC</color>
+    <color name="progress_bar_end">#5C78EB</color>
+
+    <color name="common_light_bg">#f8f8f8</color>
+
+    <color name="black_554b3c">#554b3c</color>
+    <color name="yellow_FFFFDDB6">#FFFFDDB6</color>
+    <color name="text_black_565656">#565656</color>
+    <color name="darkgray">#707070</color>
+
+    <color name="golden_red_packet">#FFDAB0</color>
+    <color name="red_red_packet">#D70A07</color>
+    <color name="blue_red_packet">#4A77F5</color>
+    <color name="ic_redpacket_item">#FFDAAE</color>
+
+    <!--固收-->
+    <color name="fund_style_profit">#956F28</color>
+    <!--平衡-->
+    <color name="fund_style_balance">#FF8320</color>
+    <!--股票-->
+    <color name="fund_style_shares">#5995EF</color>
+    <color name="shadow">#90000000</color>
+    <color name="tab_active_txt">#D0021B</color>
+
+    <color name="black_deep_alpha">#BB000000</color>
+
+    <color name="new_ui_btn_txt_red">#C52736</color>
+    <color name="new_ui_btn_light_gray">#E8E8E8</color>
+    <color name="new_ui_btn_dark_gray">#BBBBBB</color>
 </resources>
