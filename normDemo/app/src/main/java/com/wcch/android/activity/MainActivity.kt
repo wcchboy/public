@@ -1,31 +1,37 @@
 package com.wcch.android.activity
 
-import android.Manifest
 import android.app.Activity
 import android.content.pm.PackageManager
-import android.graphics.ImageFormat
-import android.os.Build
-import android.os.Bundle
+import android.os.*
 import android.util.Log
-import android.util.Log.d
-import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.Camera
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import com.igrs.cleardata.Const
+import com.wcch.android.R
 import com.wcch.android.databinding.ActivityMainBinding
 import com.wcch.android.utils.LogUtils
-import com.wcch.android.utils.PermissionUtil
+import com.wcch.android.view.HorizontalProgressBarWithNumber
 
 
 class MainActivity : Activity() {
 
     private lateinit var binding: ActivityMainBinding
     private var havePermission = false
+    private val MSG_PROGRESS_UPDATE = 0x110
+    private val TAG="MainActivity"
+    var startI = 0;
 
+    private val mHandler = object : Handler(Looper.myLooper()!!) {
+        override fun handleMessage(msg: Message) {
+            var progress =binding.dialogSv.progress
+            println("progress: $progress")
+            binding.dialogSv.progress = ++progress
+            if (progress >= 100) {
+                this.removeMessages(MSG_PROGRESS_UPDATE)
+            }
+            startAn()
 
-
-
+            this.sendEmptyMessageDelayed(MSG_PROGRESS_UPDATE, 100)
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -38,6 +44,19 @@ class MainActivity : Activity() {
                 //println("sss:$s")
             }
         }
+        mHandler.sendEmptyMessage(MSG_PROGRESS_UPDATE);
+        binding.tP1.imageStartAnimation()
+    }
+    private fun startAn(){
+
+        binding.tP1.setProgress(startI)
+        if (startI<=100) {
+            println("startI:$startI")
+            startI++
+        }
+
+
+
     }
 
 

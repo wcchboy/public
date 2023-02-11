@@ -9,15 +9,14 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
+import androidx.annotation.OptIn
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.camera2.interop.Camera2CameraInfo
 import androidx.camera.camera2.interop.ExperimentalCamera2Interop
-import androidx.camera.core.CameraSelector
-import androidx.camera.core.ImageCapture
-import androidx.camera.core.ImageCaptureException
-import androidx.camera.core.Preview
+import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.video.*
+import androidx.camera.video.VideoCapture
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.PermissionChecker
@@ -346,7 +345,7 @@ class CameraActivity : AppCompatActivity() {
 
 
     //所支持的硬件级别可以从 Camera2CameraInfo 中检索。例如，以下代码可检查默认的后置摄像头是否是 LEVEL_3 设备：
-    @androidx.annotation.OptIn(ExperimentalCamera2Interop::class)
+    @OptIn(ExperimentalCamera2Interop::class)
     fun isBackCameraLevel3Device(cameraProvider: ProcessCameraProvider) : Boolean {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             return CameraSelector.DEFAULT_BACK_CAMERA

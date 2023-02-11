@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-parcelize'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
 
     defaultConfig {
         configurations.all {
@@ -11,7 +11,7 @@ android {
         }
         applicationId "com.wcch.android"
         minSdkVersion 26
-        targetSdkVersion 29
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -132,7 +132,15 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
 
     //------cameraX相关
-    def camerax_version = "1.2.0-rc01"
+    def camerax_version = "1.1.0"
+    //def camerax_version = "1.0.0-beta03"
+    def camerax_version_view = "1.1.0"
+/*    implementation "androidx.camera:camera-core:1.0.2"
+    implementation "androidx.camera:camera-camera2:1.0.2"
+    implementation "androidx.camera:camera-lifecycle:1.0.2"
+    implementation "androidx.camera:camera-video:1.0.2"
+    implementation "androidx.camera:camera-view:1.0.2"
+    implementation "androidx.camera:camera-extensions:1.0.2"*/
     implementation "androidx.camera:camera-core:${camerax_version}"
     implementation "androidx.camera:camera-camera2:${camerax_version}"
     implementation "androidx.camera:camera-lifecycle:${camerax_version}"
@@ -141,5 +149,6 @@ dependencies {
     implementation "androidx.camera:camera-view:${camerax_version}"
     implementation "androidx.camera:camera-extensions:${camerax_version}"
     //----
-
+    implementation 'com.endo.common:comutils:1.0.0'
+    implementation 'com.endo.modulebase:modulebase:1.0.0'
 }

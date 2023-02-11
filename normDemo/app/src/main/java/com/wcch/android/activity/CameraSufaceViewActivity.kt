@@ -100,15 +100,16 @@ class CameraSufaceViewActivity: AppCompatActivity() {
         }
     }*/
     inner class SufaceViewCallback: SurfaceHolder.Callback{
-        override fun surfaceCreated(holder: SurfaceHolder?) {
+        override fun surfaceCreated(holder: SurfaceHolder) {
             Log.d(TAG,"SufaceViewCallback")
         }
 
-        override fun surfaceChanged(holder: SurfaceHolder?, format: Int, width: Int, height: Int) {
+        override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
             Log.d(TAG,"surfaceChanged format:$format width: $width height: $height ")
+
         }
 
-        override fun surfaceDestroyed(holder: SurfaceHolder?) {
+        override fun surfaceDestroyed(holder: SurfaceHolder) {
             Log.d(TAG,"surfaceDestroyed")
         }
 

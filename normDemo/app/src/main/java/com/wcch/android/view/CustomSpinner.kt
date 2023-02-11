@@ -5,10 +5,9 @@ import android.util.AttributeSet
 import kotlin.jvm.JvmOverloads
 import android.view.LayoutInflater
 import android.view.View
-import com.igrs.betotablet.R
 import android.view.ViewGroup
 import android.widget.*
-import com.igrs.betotablet.view.CustomSpinner.SpinnerAdapter
+import com.wcch.android.R
 import java.util.ArrayList
 
 class CustomSpinner @JvmOverloads constructor(context: Context?, attrs: AttributeSet?, defStyle: Int = 0)

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="68dp"
+    android:layout_height="68dp"
+    >
+<!--//圆形进度条 -->
+<com.wcch.android.view.CircleProgressBar
+    android:id="@+id/cicle_progressBar"
+    android:layout_width="68dp"
+    android:layout_height="68dp"
+    android:layout_centerInParent="true"
+    app:CircleProgressbar_radius="30dp"
+    app:CircleProgressbar_ringColor="#FF1A6BFC"
+    app:CircleProgressbar_strokeBgColor="#FF344673"
+    app:CircleProgressbar_strokeWidth="5dp"
+    />
+<!--//圆形imageview-->
+<com.wcch.android.view.CircleImageView
+    android:id="@+id/cicle_image"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/icon_local_devices"/>
+
+</RelativeLayout>

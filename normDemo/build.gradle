@@ -12,7 +12,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-
+        maven {url 'https://dl.google.com/dl/android/maven2/'}
         maven {
             allowInsecureProtocol = true
             url 'http://maven.aliyun.com/nexus/content/groups/public/'
@@ -29,40 +29,68 @@ buildscript {
             allowInsecureProtocol = true
             url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin'
         }
+
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username '63e0555706cf4c2928c02b24'
+                password 'R7gjV(Zzg2xK'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2327710-release-sttJAI/'
+        }
     }
+
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        /*maven { url 'https://jitpack.io' }
-        maven {
-            allowInsecureProtocol = true
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+            maven {
+                url 'https://dl.google.com/dl/android/maven2/'
+                //url 'https://maven.google.com/'
+                name 'Google'
+            }
+            maven { url 'https://jitpack.io' }
+            maven {
+                allowInsecureProtocol = true
+                url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            }
+            maven {
+                allowInsecureProtocol = true
+                url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+            }
+            maven {
+                allowInsecureProtocol = true
+                url 'http://maven.aliyun.com/nexus/content/repositories/google'
+            }
+            maven {
+                allowInsecureProtocol = true
+                url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin'
+            }
+            maven {
+                allowInsecureProtocol = true
+                url 'http://4thline.org/m2'
+            }
+
+            maven {
+                url 'https://maven.aliyun.com/repository/public'
+            }
+            maven {
+                credentials {
+                    username '63e0555706cf4c2928c02b24'
+                    password 'R7gjV(Zzg2xK'
+                }
+                url 'https://packages.aliyun.com/maven/repository/2327710-release-sttJAI/'
+            }
         }
-        maven {
-            allowInsecureProtocol = true
-            url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
-        }
-        maven {
-            allowInsecureProtocol = true
-            url 'http://maven.aliyun.com/nexus/content/repositories/google'
-        }
-        maven {
-            allowInsecureProtocol = true
-            url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin'
-        }
-        maven {
-            allowInsecureProtocol = true
-            url 'http://4thline.org/m2'
-        }*/
     }
-}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

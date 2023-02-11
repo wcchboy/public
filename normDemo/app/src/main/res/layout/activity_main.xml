@@ -1,14 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/activity_btn1"
-        android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink_50"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="50dp"
-        android:layout_gravity="center_horizontal"
-        android:text="清除"/>
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/activity_btn1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:minHeight="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="清除"/>
+        <com.wcch.android.view.NumIn
+            android:background="@color/blue_300"
+            android:id="@+id/join_group_num_in"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="17dp"
+            app:inputCount="4"
+            app:textSize="20dp"
+            app:textColor="@color/white"
+            app:backgroundColor="@color/transparent"
+            app:emptyType="hollowCircle"
+            app:textWidthMargin="15dp"
+            app:emptyColor="@color/blue_600"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue_300"
+         >
+
+        <TextView
+            android:id="@+id/tv_alert_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="发现新设备"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:gravity="bottom|center_horizontal">
+            <CheckBox
+                android:id="@+id/tv_alert_second_content_ck11"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:scaleX="0.50"
+                android:scaleY="0.50"
+                android:layout_gravity="bottom"
+                android:buttonTint="@color/checkbox_color">
+            </CheckBox>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下次自动加入"
+                android:textColor="#99FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="8dp" />
+            <include layout="@layout/item_device_mic_ability_notext"
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+            <include layout="@layout/item_device_mic_ability"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <include layout="@layout/projected_screen_floating_window_layout"/>
+
+        <com.wcch.android.view.HorizontalProgressBarWithNumber
+            android:id="@+id/dialog_sv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:progress_unreached_color="#FF5568A7"
+            app:progress_reached_color="#FF1A6BFC"
+            app:progress_reached_bar_height="5dp"
+            app:progress_unreached_bar_height="5dp"
+            app:progress_text_visibility="invisible"
+            app:progress_text_color="@color/red_900"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="40M/600M"
+            android:textColor="#99FFFFFF"
+            android:textSize="8sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginBottom="8dp"/>
+        <com.wcch.android.view.CircleProgressBarAndImageView
+            android:id="@+id/t_p_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_margin="1dp"
+            android:textSize="9sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/metting_setting_sure_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/sure"
+        android:textSize="9sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/checked_zhuxue"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="10dp"
+                android:text="自动接受"
+                android:textSize="8dp"
+                android:button="@drawable/checked_size"
+                android:textColor="@color/white"
+                android:checked="true"
+                android:background="@drawable/ridio_check_bg"/>
+            <RadioButton
+                android:id="@+id/checked_zhuxue1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="10dp"
+                android:text="自动接受1"
+                android:textSize="8dp"
+                android:background="@drawable/ridio_check_bg"
+                android:button="@drawable/checked_size"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/checked_zhuxue2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1.69"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="10dp"
+                android:text="自动接受2"
+                android:textSize="8dp"
+                android:button="@drawable/checked_size"
+                android:background="@drawable/ridio_check_bg"
+
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+
+
 
 </LinearLayout>
