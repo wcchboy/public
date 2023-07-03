@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#FFFFFFFF" android:state_checked="true" android:state_enabled="true" android:state_focused="true" />
+    <item android:color="#FFFFFFFF" android:state_checked="false" android:state_enabled="true" android:state_focused="true" />
+    <item android:color="#FFFFFFFF" android:state_checked="true" android:state_enabled="true" android:state_focused="false" />
+    <item android:color="#838586" android:state_checked="false" android:state_enabled="true" android:state_focused="false" />
+    <item android:color="#838586" android:state_checked="true" android:state_enabled="false" />
+    <item android:color="#838586" android:state_checked="false" android:state_enabled="false" />
+    <!--本来需要用40%的透明度:66FFFFFF，但是重叠起来很难看，所以直接用对应颜色838586-->
+</selector>

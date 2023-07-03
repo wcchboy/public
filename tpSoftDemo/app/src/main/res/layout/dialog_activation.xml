@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_fff_12"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_activation_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_crown"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/activation_title"
+                android:textColor="#ff141414"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/activation_vip"
+            android:textColor="#ff141414"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_activation_bg" />
+
+        <TextView
+            android:id="@+id/confirmButton"
+            android:layout_width="122dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/selector_fff_20"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="#ff158cff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

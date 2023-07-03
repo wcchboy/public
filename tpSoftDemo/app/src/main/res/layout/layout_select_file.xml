@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#66000000"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/select_file_bg"
+        android:layout_width="0dp"
+        android:layout_height="273dp"
+        android:background="@drawable/shape_fff_8_left_right_top_radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_file"
+        android:textColor="#ff141414"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/select_file_bg"
+        app:layout_constraintEnd_toEndOf="@id/select_file_bg"
+        app:layout_constraintTop_toTopOf="@id/select_file_bg"/>
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/ic_x_b"
+        app:layout_constraintEnd_toEndOf="@id/select_file_bg"
+        app:layout_constraintTop_toTopOf="@id/select_file_bg"/>
+
+    <Button
+        android:id="@+id/select_picture_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="@string/select_picture_title"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginTop="109dp"
+        android:gravity="center"
+        android:background="@drawable/selector_button"
+        app:layout_constraintStart_toStartOf="@id/select_file_bg"
+        app:layout_constraintEnd_toEndOf="@id/select_file_bg"
+        app:layout_constraintTop_toTopOf="@id/select_file_bg"/>
+
+    <Button
+        android:id="@+id/select_file_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="@string/select_file_title"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:background="@drawable/selector_button"
+        app:layout_constraintStart_toStartOf="@id/select_file_bg"
+        app:layout_constraintEnd_toEndOf="@id/select_file_bg"
+        app:layout_constraintTop_toBottomOf="@id/select_picture_btn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -173,6 +173,16 @@
 
         </RadioGroup>
 
+    <ProgressBar
+        android:id="@+id/web_progress"
+        style="@style/myProgressBarStyleLarge"
+        android:indeterminateDuration="1000"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_gravity="center"/>
+
 
 
 </LinearLayout>

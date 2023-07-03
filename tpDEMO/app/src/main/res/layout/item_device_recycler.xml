@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/item_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/check_device"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_select_n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/device_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_device_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/placeholder_view"
+        android:layout_width="3dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/device_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginStart="53dp"
+        android:textColor="#ff141414"
+        android:textSize="16sp"
+        tools:text="Thinkvision大屏"
+        app:layout_goneMarginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/placeholder_view"
+        app:layout_constraintEnd_toStartOf="@id/divide_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/device_state_tv"/>
+
+    <TextView
+        android:id="@+id/device_state_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffa1a1a1"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        tools:text="已连接"
+        app:layout_constraintStart_toStartOf="@id/device_name_tv"
+        app:layout_constraintTop_toBottomOf="@id/device_name_tv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/cast_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="#ff141414"
+        android:textSize="13sp"
+        tools:text="1234"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cast_code_title_tv"/>
+
+    <TextView
+        android:id="@+id/cast_code_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="#ffa1a1a1"
+        android:textSize="10sp"
+        android:layout_marginTop="4dp"
+        android:text="@string/cast_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cast_code_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/cast_code_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="cast_code_tv,cast_code_title_tv"
+        />
+
+    <View
+        android:id="@+id/divide_view"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:background="#e0e0e0"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cast_code_barrier"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/cast_code_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="cast_code_tv,cast_code_title_tv,divide_view"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/device_state_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="placeholder_view,device_state_tv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CoolImageView">
+        <attr name="direction" format="string"/>
+        <attr name="autoMove" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SlideButton">
+        <attr name="android:clickable" format="boolean"/>
+        <attr name="android:defaultValue" format="boolean"/>
+    </declare-styleable>
+
+    <!--分别为inputCount(输入数字个数)、textColor(字体颜色)、textSize(字体大小)、backgroundColor（背景颜色）、 isPassword(是否为密码输入)、
+    emptyColor(未输入时的符号颜色)、emptyType(未输入时的符号类型，共有三种类型——Line、Circle、Rectangle)。 所有属性都可以在代码中动态改变。
+    内置一个监听器InputCallBack,需要实现2个方法-->
+    <declare-styleable name="NumIn">
+        <attr name="inputCount" format="integer"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="isPassword" format="boolean"/>
+        <attr name="emptyColor" format="color"/>
+        <attr name="emptyType">
+            <enum name="line" value="1"/>
+            <enum name="circle" value="2"/>
+            <enum name="rectangle" value="3"/>
+            <enum name="hollowCircle" value="4"/>
+        </attr>
+        <attr name="textWidthMargin" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="DotProgressBar">
+        <attr name="startColor" format="color"/>
+        <attr name="endColor" format="color"/>
+        <attr name="duration" format="integer"/>
+        <attr name="amount" format="integer"/>
+        <attr name="animationDirection" format="enum">
+            <enum name="right" value="1"/>
+            <enum name="left" value="-1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalProgressBarWithNumber">
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBarWidthNumber">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBarAndImageView">
+        <attr name="CircleProgressbar_imageWidth" format="color" />
+        <attr name="CircleProgressbar_imageHeight" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="CircleProgressbar_radius" format="dimension" />
+        <attr name="CircleProgressbar_strokeWidth" format="dimension" />
+        <attr name="CircleProgressbar_ringColor" format="color" />
+        <attr name="CircleProgressbar_strokeBgColor" format="color" />
+    </declare-styleable>
+</resources>

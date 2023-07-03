@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 圆角按钮 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+       android:useLevel="true">
+    <!-- 圆角 -->
+    <corners android:radius="3dp" />
+    <!-- 对应渐变 -->
+    <stroke android:color="@color/progress_bar_end" android:width="1px" android:dashWidth="1px" />
+</shape>

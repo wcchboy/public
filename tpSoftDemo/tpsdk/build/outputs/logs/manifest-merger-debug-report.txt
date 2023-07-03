@@ -1,0 +1,61 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:3:5-29
+		INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+		INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:6:5-75
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:6:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:9:5-78
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:9:22-75
+application
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:10:5-20:19
+	android:largeHeap
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:10:18-42
+service#com.igrs.tpsdk.service.ScreenRecordService_sys
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:11:9-13:40
+	android:exported
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:12:13-74
+service#com.igrs.tpsdk.service.FtpService
+ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:17:9-19:40
+	android:exported
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:18:13-47
+uses-sdk
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+		INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+		ADDED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+		INJECTED from D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml

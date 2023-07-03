@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="10dp"
+        android:height="10dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:drawable="@drawable/radio_check"/>
+    <!--"radio_check"是我用到的另一个在drawable 下的 xml 文件，用于设置单选按钮的图片。-->
+</layer-list>

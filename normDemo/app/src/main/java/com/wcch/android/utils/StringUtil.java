@@ -34,4 +34,27 @@ public class StringUtil {
         }
         return true;
     }
+
+    public static int bytes2Int32Be(byte[] bytes, int offset) {
+        int addr = 0;
+        addr = bytes[offset + 0] & 0xFF;
+        addr = (addr << 8) + (bytes[offset + 1] & 0xFF);
+        addr = (addr << 8) + (bytes[offset + 2] & 0xFF);
+        addr = (addr << 8) + (bytes[offset + 3] & 0xFF);
+        return addr;
+    }
+    /**
+     * int到byte[]
+     * @param i
+     * @return
+     */
+    public static byte[] intToByteArray(int i) {
+        byte[] result = new byte[4];
+        // 由高位到低位
+        result[0] = (byte) ((i >> 24) & 0xFF);
+        result[1] = (byte) ((i >> 16) & 0xFF);
+        result[2] = (byte) ((i >> 8) & 0xFF);
+        result[3] = (byte) (i & 0xFF);
+        return result;
+    }
 }

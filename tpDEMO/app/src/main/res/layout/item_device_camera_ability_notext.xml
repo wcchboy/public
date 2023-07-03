@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_ability"
+    android:layout_width="156px"
+    android:layout_height="118px"
+    android:background="@color/blue_500">
+
+    <ImageView
+        android:id="@+id/iv_ability"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:src="@drawable/icon_ability_02" />
+
+    <ImageView
+        android:layout_marginLeft="98px"
+        android:layout_marginTop="36px"
+        android:id="@+id/iv_ability_use"
+        android:background="@drawable/ability_use_shape"
+        android:layout_width="6px"
+        android:layout_height="6px"/>
+
+
+</RelativeLayout>

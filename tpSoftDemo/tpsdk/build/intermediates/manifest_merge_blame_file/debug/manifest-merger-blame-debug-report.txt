@@ -1,0 +1,50 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.igrs.tpsdk" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="26"
+6-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="31" />
+7-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+9-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:5:5-79
+9-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:5:22-76
+10    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+10-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:6:5-75
+10-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:6:22-72
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:7:5-81
+11-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:7:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:8:5-80
+12-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:8:22-77
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:9:5-78
+13-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:9:22-75
+14
+15    <application android:largeHeap="true" >
+15-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:10:5-20:19
+15-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:10:18-42
+16        <service
+16-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:11:9-13:40
+17            android:name="com.igrs.tpsdk.service.ScreenRecordService_sys"
+17-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:12:13-74
+18            android:exported="false" />
+18-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:13:13-37
+19        <service
+19-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:11:9-13:40
+20            android:name="com.igrs.tpsdk.service.ScreenRecordService_sys"
+20-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:12:13-74
+21            android:exported="false" />
+21-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:13:13-37
+22        <service
+22-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:17:9-19:40
+23            android:name="com.igrs.tpsdk.service.FtpService"
+23-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:18:13-47
+24            android:exported="false" />
+24-->D:\git\public\tpSoftDemo\tpsdk\src\main\AndroidManifest.xml:19:13-37
+25    </application>
+26
+27</manifest>

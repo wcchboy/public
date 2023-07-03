@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_window_view"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--缩放frameLayout-->
+            <com.wcch.android.view.TouchFrameLayout
+                android:id="@+id/fl_video_parent_view"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.igrs.sml.PlayerView
+                    android:layout_gravity="center"
+                    android:id="@+id/playView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            </com.wcch.android.view.TouchFrameLayout>
+
+            <ImageView
+                android:id="@+id/img_close"
+                style="@style/click"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_x"/>
+
+        </RelativeLayout>
+
+        <!--遥控器适配选中BG-->
+        <RelativeLayout
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/rl_focus_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</RelativeLayout>

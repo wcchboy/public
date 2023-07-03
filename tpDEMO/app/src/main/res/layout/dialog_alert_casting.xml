@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_casting_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dialog_title_dp"
+            android:paddingRight="@dimen/dialog_title_dp"
+            android:paddingTop="@dimen/dialog_title_dp" >
+
+            <TextView
+                android:id="@+id/tv_alert_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_content_margin_top"
+                android:gravity="center"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_title_sp" />
+
+            <TextView
+                android:id="@+id/tv_alert_second_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_content_margin_top"
+                android:text="内容"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_content_sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dialog_content_margin_bottom"
+        android:layout_marginTop="@dimen/dialog_content_margin_bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dialog_content_margin_top"
+        android:paddingRight="@dimen/dialog_content_margin_top" >
+
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="44dp"
+            android:background="@drawable/device_casting_exit_button_bg"
+            android:paddingLeft="@dimen/dialog_content_margin_top"
+            android:paddingRight="@dimen/dialog_content_margin_top"
+            android:text="取消"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <Space
+            android:id="@+id/view_divider"
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="44dp"
+            android:background="@drawable/device_casting_agree_button_bg"
+            android:paddingLeft="@dimen/dialog_content_margin_top"
+            android:paddingRight="@dimen/dialog_content_margin_top"
+            android:text="确定"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+        
+    </LinearLayout>
+
+</LinearLayout>

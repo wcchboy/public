@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_window"
+    android:background="#FF626D82"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.igrs.sml.PlayerView
+        android:id="@+id/soft_player_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_drag_bg"
+        android:visibility="gone"
+        android:src="@drawable/icon_drag_range_bg"
+        android:layout_width="135dp"
+        android:layout_height="135dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_full_screen_bg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/icon_drag_range_bg"
+        android:layout_width="101dp"
+        android:layout_height="101dp">
+
+
+        <RelativeLayout
+            android:background="@drawable/full_screen_selector"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:id="@+id/rl_full_screen"
+            android:layout_width="21dp"
+            android:layout_height="21dp">
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_full_screen"
+                android:layout_width="11dp"
+                android:layout_height="11dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

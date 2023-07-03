@@ -48,6 +48,8 @@ class CameraActivity : AppCompatActivity() {
 
     private lateinit var cameraExecutor: ExecutorService
 
+    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBinding = CameraLayoutBinding.inflate(layoutInflater)

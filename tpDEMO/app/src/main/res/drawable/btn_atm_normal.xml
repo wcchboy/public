@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 直角按钮 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="true">
+    <!--<stroke android:width="1px" android:dashWidth="1px" android:color="@color/c_light_gray"/>
+    <solid android:color="@color/white_bg" />-->
+
+    <size
+        android:width="78dp"
+        android:height="3dp" />
+    <solid android:color="@color/white" />
+    <corners android:radius="2dp" />
+
+</shape>
+    
