@@ -174,7 +174,7 @@ public class HorizontalProgressBarWithNumber extends ProgressBar
 
 		//
 		// mPaint.getTextBounds(text, 0, text.length(), mTextBound);
-		System.out.println("mifdrawtext:"+mIfDrawText);
+		//System.out.println("mifdrawtext:"+mIfDrawText);
 		if(mIfDrawText){
 
 			float textWidth = mPaint.measureText(text);

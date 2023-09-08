@@ -69,4 +69,15 @@
         <attr name="CircleProgressbar_ringColor" format="color" />
         <attr name="CircleProgressbar_strokeBgColor" format="color" />
     </declare-styleable>
+
+    <!--箭头宽度、箭头高度、箭头水平偏移、圆角半径、菜单背景色、阴影色、阴影厚度-->
+    <declare-styleable name="ArrowRectangleView">
+        <attr name="arrow_width" format="dimension" />
+        <attr name="arrow_height" format="dimension" />
+        <attr name="arrow_offset" format="dimension" />
+        <attr name="arrow_radius" format="dimension" />
+        <attr name="background_color" format="color" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_thickness" format="dimension" />
+    </declare-styleable>
 </resources>

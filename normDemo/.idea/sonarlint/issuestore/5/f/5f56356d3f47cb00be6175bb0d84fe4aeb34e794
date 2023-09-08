@@ -1,0 +1,69 @@
+
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤áİÁüÿÿÿÿ
+v
+java:S1104'"[Make EMPTY_TYPE_LINE a static final constant or non-public and provide accessors if needed.(‰‹æŠúÿÿÿÿ
+s
+java:S1104("]Make EMPTY_TYPE_CIRCLE a static final constant or non-public and provide accessors if needed.(³üô•
+{
+java:S1104)"`Make EMPTY_TYPE_RECTANGLE a static final constant or non-public and provide accessors if needed.(‡Ô™şÿÿÿÿ
+P
+java:S1444'"5Make this "public static EMPTY_TYPE_LINE" field final(‰‹æŠúÿÿÿÿ
+M
+java:S1444("7Make this "public static EMPTY_TYPE_CIRCLE" field final(³üô•
+U
+java:S1444)":Make this "public static EMPTY_TYPE_RECTANGLE" field final(‡Ô™şÿÿÿÿ
+X
+java:S2184Æ"ACast one of the operands of this addition operation to a "float".(Ôú˜Ä
+]
+java:S2184Ç"ACast one of the operands of this addition operation to a "float".(ëø²´úÿÿÿÿ
+]
+java:S2184Ê"ACast one of the operands of this addition operation to a "float".(Ÿ…ÉÉúÿÿÿÿ
+]
+java:S2184Ë"ACast one of the operands of this addition operation to a "float".(ÊÄìûÿÿÿÿ
+X
+java:S2184Ò"ACast one of the operands of this addition operation to a "float".(ö½³à
+]
+java:S2184Ó"ACast one of the operands of this division operation to a "float".(Öî´ˆşÿÿÿÿ
+X
+java:S2184Ö"ACast one of the operands of this addition operation to a "float".(ô€Ÿ‘
+X
+java:S2184×"ACast one of the operands of this division operation to a "float".(Õé¸²
+X
+java:S2184×"ACast one of the operands of this division operation to a "float".(Õé¸²
+[
+java:S2184Û"DCast one of the operands of this subtraction operation to a "float".(Ş¾×
+`
+java:S2184Ü"DCast one of the operands of this subtraction operation to a "float".(Ş¤°Ïüÿÿÿÿ
+]
+java:S2184İ"ACast one of the operands of this addition operation to a "float".(Õâ•ßüÿÿÿÿ
+X
+java:S2184Ş"ACast one of the operands of this addition operation to a "float".(±ËÏ©
+X
+java:S2184î"ACast one of the operands of this addition operation to a "float".(ô€Ÿ‘
+X
+java:S2184ï"ACast one of the operands of this division operation to a "float".(Õé¸²
+X
+java:S2184ï"ACast one of the operands of this division operation to a "float".(Õé¸²
+X
+java:S2184ó"ACast one of the operands of this addition operation to a "float".(ö½³à
+]
+java:S2184ô"ACast one of the operands of this division operation to a "float".(Öî´ˆşÿÿÿÿ
+u
+java:S3008'"ZRename this field "EMPTY_TYPE_LINE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‹æŠúÿÿÿÿ
+r
+java:S3008("\Rename this field "EMPTY_TYPE_CIRCLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³üô•
+z
+java:S3008)"_Rename this field "EMPTY_TYPE_RECTANGLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ô™şÿÿÿÿ
+U
+java:S1161T":Add the "@Override" annotation above this method signature(ØÊ‡ìúÿÿÿÿ
+8	java:S131‹""Add a default case to this switch.(ÍëÑô
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(Ö†Ÿúÿÿÿÿ
+W	java:S125°"<This block of commented-out lines of code should be removed.(„Î€ùÿÿÿÿ
+T	java:S106í"9Replace this use of System.out or System.err by a logger.(¾Êßûÿÿÿÿ
+T	java:S106’"9Replace this use of System.out or System.err by a logger.(ˆ´çûÿÿÿÿ
+O	java:S106™"9Replace this use of System.out or System.err by a logger.(ı©ï±
+?
+java:S1185©"(Remove this method to simply inherit it.(±†÷º
+i
+java:S3776Ã"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Â¼–Â

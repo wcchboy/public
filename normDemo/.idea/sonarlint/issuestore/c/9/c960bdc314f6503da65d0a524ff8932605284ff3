@@ -1,8 +1,16 @@
 
-[kotlin:S1172-"7Use "_" instead of this unused lambda parameter "view".(ìÇÓŸúÿÿÿÿ8æ¡Ö¿ú0
-<kotlin:S125."Remove this commented out code.(«Ù‚j8ó¡Ö¿ú0
-Bkotlin:S1257"Remove this commented out code.(½ùÓ¾ûÿÿÿÿ8õ¡Ö¿ú0
-Bkotlin:S125:"Remove this commented out code.(™€Şıÿÿÿÿ8õ¡Ö¿ú0
-=kotlin:S125V"Remove this commented out code.(³Áü8ö¡Ö¿ú0
-=kotlin:S125Y"Remove this commented out code.(´¼ØÃ8÷¡Ö¿ú0
-=kotlin:S125]"Remove this commented out code.(íßùó8ù¡Ö¿ú0
+Tkotlin:S11729"7Use "_" instead of this unused lambda parameter "view".(ìÇÓŸúÿÿÿÿ
+6kotlin:S125)"Remove this commented out code.(Ú¶ö‘
+5kotlin:S125:"Remove this commented out code.(«Ù‚j
+;kotlin:S125C"Remove this commented out code.(½ùÓ¾ûÿÿÿÿ
+;kotlin:S125F"Remove this commented out code.(™€Şıÿÿÿÿ
+;kotlin:S125O"Remove this commented out code.(Ï£ßãÿÿÿÿÿ
+;kotlin:S125`"Remove this commented out code.(íÇÔ—øÿÿÿÿ
+6kotlin:S125j"Remove this commented out code.(³Áü
+6kotlin:S125m"Remove this commented out code.(´¼ØÃ
+6kotlin:S125q"Remove this commented out code.(íßùó
+Ckotlin:S1481N"+Remove this unused "result" local variable.(ª„­©
+Hkotlin:S1874×"#Deprecated code should not be used.(«µŒ¤ÿÿÿÿÿ8œìµõ¦1
+Hkotlin:S1874×"#Deprecated code should not be used.(«µŒ¤ÿÿÿÿÿ8ìµõ¦1
+dkotlin:S6516A"LReplace explicit functional interface implementation with lambda expression.(°§Ñß
+qkotlin:S6516"LReplace explicit functional interface implementation with lambda expression.(ìï äşÿÿÿÿ8£ìµõ¦1

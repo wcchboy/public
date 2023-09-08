@@ -1,0 +1,15 @@
+
+>
+java:S16040"(Make this anonymous inner class a lambda(‹Œ´›
+f
+java:S3252"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(á™—
+k
+java:S3252"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(–¢ğûÿÿÿÿ
+C
+java:S1185L"(Remove this method to simply inherit it.(ªå„³ùÿÿÿÿ
+U
+java:S1161L":Add the "@Override" annotation above this method signature(ªå„³ùÿÿÿÿ
+C
+java:S1185P"(Remove this method to simply inherit it.(ùùì¹şÿÿÿÿ
+U
+java:S1161P":Add the "@Override" annotation above this method signature(ùùì¹şÿÿÿÿ

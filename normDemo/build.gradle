@@ -46,6 +46,9 @@ buildscript {
         classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
+    tasks.withType(JavaCompile) {
+        options.compilerArgs.addAll(['--add-opens', 'java.base/java.io=ALL-UNNAMED'])
+    }
 }
 
     allprojects {

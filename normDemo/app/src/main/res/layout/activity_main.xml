@@ -127,8 +127,14 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:text="@string/sure"
-        android:textSize="9sp" />
+        android:textSize="9sp"
+        android:visibility="gone"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="150dp"
@@ -172,17 +178,26 @@
                 android:textColor="@color/white" />
 
         </RadioGroup>
+        <ProgressBar
+            android:id="@+id/web_progress"
+            style="@style/myProgressBarStyleLarge"
+            android:indeterminateDuration="1000"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_gravity="center"/>
 
-    <ProgressBar
-        android:id="@+id/web_progress"
-        style="@style/myProgressBarStyleLarge"
-        android:indeterminateDuration="1000"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:focusable="false"
-        android:clickable="false"
-        android:layout_gravity="center"/>
-
-
-
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/toolbar_menu"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checking"
+            android:clickable="false"/>
+    </LinearLayout>
 </LinearLayout>
