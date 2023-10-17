@@ -1,0 +1,11 @@
+com.igrs.tpsdk
+drawable dot
+drawable ic_ct_left
+drawable ic_ct_right
+drawable ic_desk
+drawable ic_desk_error
+drawable ic_desk_wifi
+drawable ic_ul_desk
+drawable shape_desk_dot
+id img_dot
+layout float_image

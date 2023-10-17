@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_ability"
+    android:layout_width="156px"
+    android:layout_height="118px"
+    >
+
+    <ImageView
+        android:id="@+id/iv_ability"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:src="@drawable/icon_ability_02" />
+
+    <ImageView
+        android:layout_marginLeft="98px"
+        android:layout_marginTop="36px"
+        android:id="@+id/iv_ability_use"
+        android:background="@drawable/ability_use_shape"
+        android:layout_width="6px"
+        android:layout_height="6px"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_ability_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="麦克风"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22px" />
+
+
+</RelativeLayout>

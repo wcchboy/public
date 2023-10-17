@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="459dp"
+    android:layout_height="72dp"
+    android:background="@drawable/revice_file_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:ellipsize="middle"
+        android:text="@string/recived_file"
+        android:textSize="@dimen/receive_file_text_size"
+        android:textColor="#cc000000"
+        android:includeFontPadding="false"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:ellipsize="middle"
+        tools:text="sssssssssssssss.ppt"
+        android:textSize="@dimen/receive_file_text_size"
+        android:textColor="#cc000000"
+        android:includeFontPadding="false"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="13dp" />
+
+    <TextView
+        android:id="@+id/tv_open_file"
+        android:clickable="true"
+        android:background="@drawable/file_receive_button_selector"
+        android:gravity="center"
+        android:text="@string/open_file"
+        android:textSize="@dimen/receive_file_text_size"
+        android:textColor="#ff2987ff"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="19dp"
+        android:layout_width="64dp"
+        android:layout_height="23dp" />
+
+    <TextView
+        android:id="@+id/tv_open_dir"
+        android:clickable="true"
+        android:background="@drawable/file_receive_button_selector"
+        android:gravity="center"
+        android:text="@string/open_folder"
+        android:textSize="@dimen/receive_file_text_size"
+        android:textColor="#ff2987ff"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="19dp"
+        android:layout_width="64dp"
+        android:layout_height="23dp" />
+
+    <View
+        android:layout_marginStart="11dp"
+        android:background="#1a000000"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="23dp"
+        android:layout_width="1dp"
+        android:layout_height="16dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_close"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="21dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_close2"
+            android:layout_width="9dp"
+            android:layout_height="9dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

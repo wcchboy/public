@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <dimen name="tab_header_title_height">25dp</dimen>
+    <dimen name="tab_footer_menu_bar_textSize">12dp</dimen>
+    <dimen name="page_common_page_center_marginTop">8dp</dimen>
+    <dimen name="page_common_page_arrow_width">22dp</dimen>
+    <dimen name="page_common_page_arrow_height">28dp</dimen>
+    <dimen name="page_common_page_bottom_button_width">72dp</dimen>
+    <dimen name="page_common_page_detail_text_padding">17dp
+    </dimen>    <!-- @dimen/page_common_page_arrow_width + 5dp -->
+    <dimen name="splash_logo_margin">60dp</dimen>
+    <dimen name="btn_hotline_width">130dp</dimen>
+    <dimen name="page_common_page_arrow_padding">5dp</dimen>
+
+    <!-- Home -->
+    <!-- travel insurance -->
+    <dimen name="travel_insurance_btn_height">40dp</dimen>
+    <!-- TNC -->
+    <dimen name="tnc_btn_width">100dp</dimen>
+    <dimen name="tnc_btn_height">32dp</dimen>
+
+    <!-- Select Language -->
+    <dimen name="select_language_textview_padding">10dp</dimen>
+    <dimen name="select_language_imageview_maring_right">10dp</dimen>
+    <dimen name="select_language_text_height">40dp</dimen>
+
+    <!-- Branch/ATM -->
+    <dimen name="branch_icons_handicapped_height">21dp</dimen>
+    <dimen name="branch_icons_handicapped_width">21dp</dimen>
+    <dimen name="branch_icons_height">10dp</dimen>
+    <dimen name="branch_icons_margin_right">4dp</dimen>
+    <dimen name="branch_icons_margin_bottom">13dp</dimen>
+    <dimen name="branch_item_margin_top">13dp</dimen>
+    <dimen name="branch_item_margin">12dp</dimen>
+    <dimen name="branch_icon_atm01_width">22dp</dimen>
+    <dimen name="branch_icon_atm02_width">62dp</dimen>
+    <!-- 加入新atm类型的宽度 add by robinchen 2015-12-02 start -->
+    <!-- E -->
+
+    <!-- Google Map -->
+    <dimen name="map_ar_btn_width">45dp</dimen>
+    <dimen name="map_ar_btn_height">42dp</dimen>
+    <dimen name="map_ar_btn_padding">5dp</dimen>
+    <dimen name="map_ar_btn_paddingBottom">10dp</dimen>
+    <dimen name="map_popup_view_padding">10dp</dimen>
+    <dimen name="map_popup_view_small_margin">5dp</dimen>
+    <!-- map_icons_height = 18 before,why -->
+    <dimen name="map_icons_height">@dimen/branch_icons_height</dimen>
+    <dimen name="map_icon_atm01_width">@dimen/branch_icon_atm01_width</dimen>
+    <dimen name="map_icon_atm02_width">@dimen/branch_icon_atm02_width</dimen>
+    <!-- 加入新atm类型的宽度 add by robinchen 2015-12-02 start -->
+    <!-- E -->
+    <dimen name="map_icon_wmc_width">@dimen/map_icon_atm01_width</dimen>
+    <dimen name="map_icon_sec_width">@dimen/map_icon_atm01_width</dimen>
+    <dimen name="map_icon_mec_width">@dimen/map_icon_atm01_width</dimen>
+    <dimen name="map_popup_view_width">300dp</dimen>
+
+    <!-- Wheel dialog -->
+    <dimen name="wheel_dialog_done_btn_width">72dp</dimen>
+    <dimen name="wheel_dialog_done_btn_height">36dp</dimen>
+
+    <!-- Call Phone -->
+    <dimen name="call_phone_layout_height">140dp</dimen>
+    <dimen name="call_phone_layout_width">280dp</dimen>
+
+    <!-- Service Hotline -->
+
+    <!-- Mortgage -->
+    <dimen name="page_mortgage_layout_height">35dp</dimen>
+    <dimen name="page_mortgage_layout_margin">5dp</dimen>
+    <dimen name="page_mortgage_layout_margin_bottom">5dp</dimen>
+    <dimen name="page_mortgage_view_width">1dp</dimen>
+    <dimen name="page_mortgage_valuation_singleheight">35dp</dimen>
+    <dimen name="page_mortgage_btn_width">100dp</dimen>
+    <dimen name="page_mortgage_item_result_height">40dp</dimen>
+    <dimen name="page_mortgage_item_result_button">25dp</dimen>
+    <dimen name="page_mortgage_item_margin">10dp</dimen>
+    <dimen name="mortgage_mywatchlist_arrow_width">13dp</dimen>
+    <dimen name="mortgage_mywatchlist_arrow_height">11dp</dimen>
+    <dimen name="mortgage_mywatchlist_delete_icon_size">30dp</dimen>
+    <dimen name="mortgage_mywatchlist_item_height">90dp</dimen>
+
+    <!-- Rates -->
+    <dimen name="rates_exchange_refresh_btn_size">42dp</dimen>
+    <dimen name="rates_exchange_refresh_padding">10dp</dimen>
+    <dimen name="rates_exchange_list_padding">10dp</dimen>
+    <dimen name="rates_exchange_list_item_ccy_icon_size">24dp</dimen>
+    <dimen name="rates_interest_list_item_height">80dp</dimen>
+    <dimen name="rates_interest_list_content_padding_top_and_bottom">5dp</dimen>
+    <dimen name="rates_interest_list_item_textsize">14sp</dimen>
+    <dimen name="rates_interest_wheel_textSize">15dp</dimen>
+    <dimen name="rates_interest_wheel_item_padding">8dp</dimen>
+    <dimen name="rates_header_menu_height">42dp</dimen>
+    <dimen name="rates_exchange_list_item_height">45dp</dimen>
+
+    <!-- Electronic_Voucher -->
+    <dimen name="electronic_voucher_icon_margin">20dp</dimen>
+    <dimen name="electronic_voucher_item_padding">10dp</dimen>
+    <!-- Cusom dialog -->
+
+    <dimen name="switch_button_size">35dp</dimen>
+    <!-- common -->
+
+    <dimen name="common_padding">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- push setting view -->
+    <dimen name="push_setting_text_height">44dp</dimen>
+    <dimen name="push_setting_text_margin_top">5dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp6">6dp</dimen>
+    <dimen name="dp36">36dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="sp_28">28sp</dimen>
+
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="height_redpacket_item">88dp</dimen>
+    <dimen name="redpacket_divider_height">1dp</dimen>
+
+    <!--mpaas_new-->
+    <dimen name="big_btn_width">5dp</dimen>
+    <dimen name="big_btn_height">5dp</dimen>
+    <dimen name="big_btn_margin">20dp</dimen>
+
+
+    <dimen name="tab_icon_width">22dp</dimen>
+    <dimen name="tab_text_size">10sp</dimen>
+
+
+    <dimen name="projection_step_two_top_margin">34dp</dimen>
+    <dimen name="projection_step_one_top_margin">16dp</dimen>
+    <dimen name="projection_text_size">12sp</dimen>
+    <dimen name="projection_title_text_size">16sp</dimen>
+    <dimen name="projection_des_text_size">11sp</dimen>
+    <!--新UI添加-->
+    <dimen name="guide_line_spacing_extra">6dp</dimen>
+    <dimen name="guide_title_text_size">35sp</dimen>
+    <dimen name="guide_sub_title_text_size">21sp</dimen>
+    <dimen name="guide_hotspot_text_size">19sp</dimen>
+    <dimen name="guide_serial_margin_top">21dp</dimen>
+    <dimen name="guide_content_margin_top">19dp</dimen>
+    <dimen name="update_title_text_size">19sp</dimen>
+    <dimen name="update_toast_text_size">12sp</dimen>
+    <dimen name="checking_version_text_size">12sp</dimen>
+    <dimen name="checking_button_text_size">12sp</dimen>
+    <dimen name="checking_detail_text_size">8sp</dimen>
+    <dimen name="downloading_content_text_size">12sp</dimen>
+    <dimen name="receive_file_text_size">12sp</dimen>
+
+
+    <dimen name="pop_option_confirm_btn">16dp</dimen>
+    <dimen name="dialog_title_dp">16dp</dimen>
+    <dimen name="dialog_content_margin_top">8dp</dimen>
+    <dimen name="dialog_content_margin_bottom">12dp</dimen>
+    <dimen name="dialog_title_sp">16sp</dimen>
+    <dimen name="dialog_content_sp">14sp</dimen>
+
+    <dimen name="dialog_title_exit_sp">9sp</dimen>
+
+    <dimen name="dialog_file_tra_title_sp">9sp</dimen>
+    <dimen name="dialog_file_tra_content_sp">8sp</dimen>
+    <!--mpaas_new-->
+
+</resources>
