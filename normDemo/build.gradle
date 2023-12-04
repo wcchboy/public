@@ -12,6 +12,11 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            allowInsecureProtocol = true
+            url 'http://10.1.35.75:18081/nexus/repository/maven-releases'
+        }
+
         maven {url 'https://dl.google.com/dl/android/maven2/'}
         maven {
             allowInsecureProtocol = true
