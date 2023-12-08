@@ -1,6 +1,10 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-parcelize'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
 
 android {
     compileSdkVersion 31
@@ -10,7 +14,7 @@ android {
             resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
         }
         applicationId "com.wcch.android"
-        minSdkVersion 26
+        minSdkVersion 25
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
@@ -50,8 +54,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'org.apache.httpcomponents:httpcore:4.4.4'
 
-    implementation 'com.alibaba:fastjson:2.0.3.android'
-    //implementation 'com.alibaba:fastjson:1.1.55.android'
+    //implementation 'com.alibaba:fastjson:2.0.3.android'
+    implementation 'com.alibaba:fastjson:1.1.55.android'
     implementation 'com.google.code.gson:gson:2.8.0'
     //implementation 'com.blankj:utilcode:1.25.9'
     // if u use AndroidX, use the following
@@ -85,6 +89,9 @@ dependencies {
     // define any required OkHttp artifacts without version
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
+    // Hilt dependencies
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
 /*    implementation('com.artifex.mupdf:viewer:1.16.1')
             {
                 exclude group: 'com.android.support'
@@ -127,9 +134,9 @@ dependencies {
 
     // -----3----
     // lifecycle 对于协程的扩展封装
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
     //------cameraX相关
     def camerax_version = "1.1.0"
@@ -162,6 +169,7 @@ dependencies {
     //---blockcanary----//
     //compile 'com.github.markzhai:blockcanary-android:1.5.0'
     // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
-    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
-    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
+    debugImplementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    releaseImplementation 'com.github.markzhai:blockcanary-no-op:1.5.0'
+
 }

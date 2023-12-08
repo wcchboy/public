@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="123"
+            android:layout_weight="1"
+            android:focusable="true"/>
+        <TextView
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="1234"
+            android:layout_weight="1"
+            android:focusable="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:focusable="true">
+        <TextView
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="1235"
+            android:focusable="true"/>
+        <TextView
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="1236"
+            android:focusable="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

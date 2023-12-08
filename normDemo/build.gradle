@@ -8,7 +8,9 @@ plugins {
 */
 
 buildscript {
-    ext.kotlin_version = '1.6.10'
+    ext.kotlin_version = '1.8.10'
+    ext.hilt_version = '2.46'
+    ext.lifecycle_version = '2.5.1'
     repositories {
         google()
         jcenter()
@@ -46,10 +48,16 @@ buildscript {
             url 'https://packages.aliyun.com/maven/repository/2327710-release-sttJAI/'
         }
     }
+/*    android {
+        tasks.withType(JavaCompile) {
+            options.encoding = "UTF-8"
+        }
+    }*/
 
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
     }
     tasks.withType(JavaCompile) {
         options.compilerArgs.addAll(['--add-opens', 'java.base/java.io=ALL-UNNAMED'])

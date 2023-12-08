@@ -2,12 +2,9 @@ package com.wcch.android.activity
 
 import android.Manifest
 import android.app.Activity
+import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Build
-import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.os.Message
+import android.os.*
 import android.util.DisplayMetrics
 import android.view.View
 import android.view.View.OnClickListener
@@ -88,6 +85,12 @@ class MainActivity : Activity() {
         initPopTest1()
 
         test2()
+
+        binding.testBtn1.setOnClickListener(object : OnClickListener{
+            override fun onClick(p0: View?) {
+                startActivity(Intent(applicationContext,YaoKongQiActivity::class.java))
+            }
+        })
     }
     private fun startAn(){
 
@@ -226,6 +229,10 @@ class MainActivity : Activity() {
 
         print("screenWidth:$screenWidth  screenHeight:$screenHeight screenWidth2:$screenWidth2  screenHeight2:$screenHeight2")
 
+    }
+
+    fun test3(){
+        com.endo.common.utilcode.util.LogUtils.d()
     }
 
 }

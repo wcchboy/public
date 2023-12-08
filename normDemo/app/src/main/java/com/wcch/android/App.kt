@@ -39,4 +39,8 @@ class App:Application() {
         // 在主进程初始化调用哈
         BlockCanary.install(this, AppBlockCanaryContext()).start()
     }
+    private fun test(s:String?){
+        s?:return
+
+    }
 }

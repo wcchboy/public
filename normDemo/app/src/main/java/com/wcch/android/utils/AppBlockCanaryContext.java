@@ -1,6 +1,14 @@
 package com.wcch.android.utils;
 
-import com.github.moduth.blockcanary.BlockCanaryContext
+import android.content.Context;
+
+import com.github.moduth.blockcanary.BlockCanaryContext;
+import com.github.moduth.blockcanary.internal.BlockInfo;
+
+import java.io.File;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Created by RyanWang on 2023/12/4.
  *

@@ -2,8 +2,6 @@ package com.wcch.android;
 
 import android.app.Application;
 
-import com.squareup.leakcanary.LeakCanary;
-
 import leakcanary.LeakCanary;
 
 /**
@@ -18,5 +16,9 @@ public class MyApplicaion extends Application {
             return;
         }
         LeakCanary.install(this);*/
+    }
+
+    private void test(String s){
+
     }
 }
