@@ -1,0 +1,420 @@
+<resources  xmlns:tools ="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">测试APP</string>
+    <!--0 通信在线；1 泰克教育；2 蓝信-->
+    <string name="about">关于</string>
+    <string name="version">版本</string>
+    <string name="update">更新</string>
+    <string name="welcome">欢迎使用闪投屏，在使用APP之前，请您阅读并充分理解《%s》和《%s》。如您同意以上内容，请点击“同意”并开始使用我们的产品和服务。</string>
+    <string name="agreement">用户许可协议</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="coming_soon">敬请期待</string>
+
+    <string name="update_apk">软件更新</string>
+    <string name="soft_agreement">软件许可协议</string>
+    <string name="soft_privacy_policy">隐私权声明</string>
+    <string name="open_source_license">开源组件许可</string>
+
+    <string name="checking">正在检查</string>
+    <string name="downloading">正在下载</string>
+    <string name="current_version">当前版本</string>
+    <string name="find_new_version">发现新版本</string>
+    <string name="newest_version">已是最新版本</string>
+    <string name="download_apk_failed">下载更新失败</string>
+    <string name="check_version_timeout">版本检测超时</string>
+    <string name="check_version_error">检查失败，请检查网络</string>
+    <string name="new_version_info_error">读取最新版本信息失败</string>
+    <string name="cancel_download">取消下载</string>
+    <string name="download_apk_failed_retry">下载失败,请重新下载</string>
+    <string name="retry">重试</string>
+    <string name="launcher_subtitle">手机投屏和遥控大屏</string>
+    <string name="launcher_agreement_title">用户须知</string>
+    <string name="launcher_agreement_agree">同意</string>
+    <string name="launcher_agreement_disagree">不同意</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="suspended_permission">需要开启悬浮权限</string>
+
+    <string name="bt_search">搜索中</string>
+    <string name="bt_switch">请打开蓝牙开关</string>
+    <string name="wifi_switch">请先开启Wi-Fi</string>
+    <string name="no_wifi_connect">无Wi-Fi连接</string>
+    <string name="gps_switch">请先打开手机定位</string>
+    <string name="open_gps_switch">打开定位</string>
+
+    <string name="dev_undiscovered">未搜到大屏设备</string>
+    <string name="dev_connected">已连接</string>
+    <string name="dev_connecting">正在连接</string>
+    <string name="to_connect">去连接</string>
+    <string name="dev_last_connected">上次连接</string>
+    <string name="dev_lost">设备失去连接</string>
+    <string name="dev_main_none">请选择大屏进行连接</string>
+    <string name="dev_connect_first">请先连接大屏</string>
+
+    <string name="discover_title">连接大屏</string>
+
+    <string name="no_find_device">未找到此设备，请检查投屏码是否正确</string>
+    <string name="not_on_the_same_network">您的手机与大屏不在同一网络</string>
+    <string name="tcp_disconnect">网络已断开</string>
+    <string name="tcp_connect_wlan_faile">您的手机与大屏不在同一网络，正在尝试自动连接大屏热点…</string>
+    <string name="tcp_connect_fail">连接失败，请检查大屏网络和投屏应用</string>
+    <string name="tcp_authentication_fail">%s 验证失败</string>
+    <string name="tcp_dev_id_faile">接收端IP获取失败，无法连接</string>
+    <string name="tcp_apinfo_faile">热点未开启，请在大屏-设置中打开大屏热点</string>
+    <string name="tcp_connect_ap_faile">自动连接大屏热点失败，请您手动连接</string>
+    <string name="tcp_retry">%s已断开,正在尝试恢复连接</string>
+    <string name="ap_ssid">大屏热点：%s</string>
+    <string name="ap_pwd">热点密码：%s</string>
+    <string name="ap_pwd_copied">密码已复制</string>
+
+    <string name="authority_fail">授权失败</string>
+    <string name="get_btinfo_fail">读取大屏蓝牙信息失败</string>
+
+    <string name="btinfo_connect_show">请将蓝牙连接至%s大屏,以传输音频</string>
+
+
+    <string name="screen_capture_mode_window">窗口</string>
+    <string name="screen_capture_mode_full">全屏</string>
+    <string name="screen_capture_mode_full_dev">请选择全屏画面</string>
+    <string name="screen_capture_mode_split">分屏</string>
+
+
+    <string name="screen_capture">投屏</string>
+    <string name="screen_capture_explain">手机屏幕投至大屏显示</string>
+    <string name="screen_capture_title">正在投屏</string>
+    <string name="screen_capture_subtitle">投屏模式</string>
+    <string name="screen_capture_fail">投屏失败</string>
+    <string name="screen_capture_stop">投屏已停止</string>
+    <string name="screen_capture_close">停止投屏</string>
+    <string name="screen_capture_home">回到主屏</string>
+    <string name="screen_capture_time_out">投屏超时</string>
+    <string name="screen_capture_error">投屏失败</string>
+    <string name="screen_capture_exit">确定停止投屏？</string>
+    <string name="screen_capture_ing">正在采集屏幕</string>
+
+    <string name="local_dev">本机</string>
+
+    <string name="str_switch">切换</string>
+    <string name="connect">连接</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="toset">去设置</string>
+    <string name="setting">设置</string>
+    <string name="web_2back_finish">再按一次返回 退出当前页面</string>
+
+    <string name="remote_control">遥控</string>
+    <string name="remote_control_explain">通过手机操控大屏</string>
+    <string name="remote_control_fail">遥控失败</string>
+    <string name="remote_control_time_out">遥控超时</string>
+    <string name="remote_control_confirm_stop">确定停止遥控？</string>
+
+    <string name="cmd10_screen_capture">%s已断开投屏</string>
+    <string name="cmd10_remote_control">%s已断开遥控</string>
+
+    <string name="cmd17_0">已达到投屏最大上限，请将已投屏的设备断开再试</string>
+    <string name="cmd17_1">%s已达到被遥控最大上限</string>
+    <string name="cmd17_2">解码器启动失败</string>
+    <string name="cmd17_3">遥控编码失败</string>
+    <string name="cmd17_4">非Android信源通道不支持遥控</string>
+    <string name="cmd17_5">切换至非Android信源，停止遥控</string>
+    <!--add 0805 -->
+    <string name="cmd17_6">retry失败，接收端任务列表已移除此任务</string>
+    <string name="cmd17_7">非激活版本，最多允许一路投屏</string>
+    <string name="cmd17_8">非激活版本不允许遥控</string>
+    <string name="cmd17_9">非激活版本无法切换窗口模式</string>
+    <string name="cmd17_10">该接收端不支持遥控</string>
+    <string name="cmd17_11">大屏正在录制屏幕，暂不支持控制大屏</string>
+
+
+    <!--add 0805 -->
+    <string name="activation_title">高级版激活</string>
+    <string name="activation_vip">此功能仅高级版可用，请在大屏端激活高级版后使用</string>
+    <string name="activation_1sc">免费版只支持1路投屏，多路投屏请在大屏端激活高级版后使用</string>
+
+    <string name="file_transfer">文件传输</string>
+    <string name="file_transfer_explain">本机文件发送给其他设备</string>
+    <string name="file_transfer_remind">请选择设备</string>
+
+    <string name="file_received">已接收文件</string>
+    <string name="transfer_discover_title">传文件</string>
+    <string name="select_picture_title">相册</string>
+    <string name="select_file_title">文件</string>
+    <string name="undiscovered_dev">未发现设备</string>
+
+    <string name="cast_code">投屏码</string>
+    <string name="sending_file">文件发送中</string>
+    <string name="receiving_file">文件接收中</string>
+    <string name="cancel_all">全部取消</string>
+    <string name="done">完成</string>
+    <string name="background_receive">后台接收</string>
+    <string name="file_transferring_remind">文件传输中，请等待…</string>
+    <string name="reject_receive_file">拒绝</string>
+    <string name="accept_receive_file">接收</string>
+
+    <!--文件传输状态-->
+    <string name="connecting">连接中…</string>
+    <string name="connect_fail">连接失败</string>
+    <string name="file_oversize">对方只接收%sG以内的文件</string>
+    <string name="waiting_other_receive">等待对方接收…</string>
+    <string name="waiting_receive">排队中…</string>
+    <string name="reject">已拒绝</string>
+    <string name="send">已发送</string>
+    <string name="send_fail">发送失败</string>
+    <string name="received">已接收</string>
+    <string name="receive_fail">接收失败</string>
+    <string name="other_cancelled">对方已取消</string>
+    <string name="cancelled">已取消</string>
+    <string name="transfer_fail_version_tips">连接失败，请重启大屏投屏应用或升级版本</string>
+
+    <!--发现页-->
+    <string name="input_cast_code">输入投屏码</string>
+    <string name="scan_qrcode_projection">扫码连接</string>
+    <string name="input_ip_projection">输入IP连接</string>
+    <string name="input_ip_address">输入IP地址</string>
+    <string name="input_ip_projection_title">输入IP连接大屏</string>
+    <string name="ip_connect_failed_toast">连接失败，请连接与大屏相同的网络</string>
+
+    <!--扫码-->
+    <string name="scan_tips_1">无法识别，请扫</string>
+    <string name="scan_tips_2">投屏二维码</string>
+    <string name="qr_code_error_tips">二维码不支持，请扫描闪投屏二维码</string>
+    <string name="qr_code_version_tips">版本不支持，请更新大屏投屏版本</string>
+
+    <!--相册-->
+    <string name="done_front_num">发送</string>
+
+    <!--1.4改版-->
+    <string name="transfer_file">传文件</string>
+    <string name="cast_code_connect_tip_2">请确保手机与大屏在同一Wi-Fi网络</string>
+    <string name="cast_code_connect_remind_2">若大屏仅显示4位投屏码，请先升级大屏端投屏软件</string>
+    <string name="cast_code_connect_remind_3">（点击右下角设置->软件升级）</string>
+    <string name="disconnect">断开</string>
+    <string name="cast_code_connect_tips_1">请输入6位投屏码</string>
+    <string name="cast_code_error">投屏码错误，请重试</string>
+    <string name="cast_code_connecting">连接中</string>
+    <string name="cast_code_connecting_remind">请稍后</string>
+    <string name="send_file">发送文件</string>
+    <string name="device_searching">设备搜索中..</string>
+    <string name="transfer_file_tips_1">传输文件需要双方：</string>
+    <string name="transfer_file_tips_2">• 	打开闪投屏APP\n• 	处于同一Wi-Fi网络\n• 	打开蓝牙</string>
+    <string name="native_name">本机名称</string>
+    <string name="auto_screen_projection">连接后立即投屏</string>
+    <string name="native_name_hint">请输入设备名</string>
+    <string name="open_projection_permission">请开启投屏权限</string>
+    <string name="overlays_other_app">在其他应用上层显示</string>
+    <string name="i_got_it">我知道了</string>
+
+    <string name="download_fail">更新下载失败：</string>
+    <string name="file_not_exit">文件不存在</string>
+    <string name="file_download_fail">文件下载失败 ：</string>
+    <string name="no_wps">未检测到WPS,请优先安装WPS软件！</string>
+    <string name="device_wakeup">设备被唤醒，重新开始投屏</string>
+    <string name="device_sleep">设备进入睡眠状态，投屏停止</string>
+    <string name="not_find_ip">异常，没找到ip对应的device</string>
+    <string name="no_signal">无信号</string>
+    <string name="projection_mode">投屏器投屏</string>
+    <string name="seeting">设置</string>
+    <string name="recived_file">已接收文件:</string>
+    <string name="open_file">打开文件</string>
+    <string name="open_folder">打开目录</string>
+
+    <string name="device_disconnect">%s已断开投屏</string>
+    <string name="init_fail">软投屏初始化失败</string>
+
+    <string name="txt_projection">允许投屏至此大屏</string>
+    <string name="txt_projection_tome">允许投屏至本机</string>
+    <string name="txt_projection_tome_remark">其他设备投屏到本机时</string>
+    <string name="txt_projection_control">允许控制本机</string>
+    <string name="txt_projection_control_remark">其他设备控制本机时</string>
+    <string name="txt_projection_receive">允许接受文件至本机</string>
+    <string name="txt_projection_receive_remark">接受其他设备的文件传输到本机时</string>
+    <string name="local_share_setting_remark1">投屏、设备控制和文件传输</string>
+    <string name="local_share_setting_remark2">音视频设备</string>
+    <string name="local_device_setting_screen_projection_txt">投屏</string>
+    <string name="local_device_setting_end_screen_projection_txt">结束投屏</string>
+    <string name="local_device_setting_control_txt">控制</string>
+    <string name="local_device_setting_end_control_txt">结束控制</string>
+    <string name="local_device_setting_file_transfer">文件传输</string>
+    <string name="voice_setting">静音设置</string>
+    <string name="device_auto_close_voice">设备自动静音</string>
+    <string name="voice_setting_des">当本机开启麦克风/扬声器时，自动将Beto网络中的其他设备静音，同时允许别的设备将我的设备静音</string>
+    <string name="voice_setting_des1">设备被自动静音时</string>
+    <string name="meeting_room_setting">会议室设置</string>
+    <string name="meeting_room_range">会议室范围设置</string>
+    <string name="meeting_room_range_des">在大约%d米半径范围搜索BeTo设备</string>
+    <string name="next_step">下一步</string>
+    <string name="first_time_guide_des_01">在此处修改您的设备名称和会议室名称，以便在网络中被轻松查找</string>
+    <string name="first_time_guide_title_01">修改设备名称和会议室名称</string>
+    <string name="first_time_guide_title_02">开启共享权限</string>
+    <string name="first_time_guide_des_02">开启后，将此设备共享至BeTo网络，共享后可以使用相应的功能</string>
+    <string name="first_time_guide_title_03">在首页查找设备、投屏、遥控</string>
+    <string name="first_time_guide_des_03">回到首页查看BeTo网络中的所有设备，您可以选择指定设备进行投屏、遥控等操作</string>
+    <string name="finish">完成</string>
+    <string name="license_title">服务协议和隐私政策</string>
+    <string name="license_text">请您务必审慎阅读、充分理解服务协议和隐私政策各条款，包括但不限于服务使用须知、用户行为规范以及为了向您提供服务而收集、使用、存储您个人信息的情况等。请阅读《服务协议》和《隐私协议》了解详细信息。如您同意，请点击“同意”开始接受我们的服务。</string>
+    <string name="not_now">暂不使用</string>
+    <string name="agree">同意</string>
+    <string name="server_agreement">服务协议</string>
+    <string name="privacy_agreement">隐私协议</string>
+    <string name="soft_version">版本：v%s</string>
+    <string name="check_update">检查更新</string>
+    <string name="better_together_des">Better Together 软件将网络中不同设备的功能（如摄像头、麦克风、扬声器、鼠标键盘等）串联起来，便捷协同工作，同时支持投屏、遥控、共享会议空间等功能。充分利用会议设备，使不同的设备之间能够自由使用网络中的共享功能，像神经网络一样互联，场景融通、数据互通。目前支持以下设备间的互联互通：智慧大屏、智能会议一体机、电脑。</string>
+    <string name="license_01">软件许可协议</string>
+    <string name="license_02">隐私权声明</string>
+    <string name="license_03">开源组件许可</string>
+    <string name="request_error">请求发生未知错误</string>
+    <string name="can_not_connect_server">无法访问服务器</string>
+    <string name="no_new_version">当前已是最新版本</string>
+    <string name="net_error">无法连接网络，请检查网络连接</string>
+    <string name="sure">确定</string>
+    <string name="found_new_version">发现新版本：v%s</string>
+    <string name="license_agreement">开源许可</string>
+    <string name="bluetooth_close">蓝牙已关闭，请在设置中打开蓝牙</string>
+    <string name="ap_off">热点关闭，请在设置中打开WIFI</string>
+    <string name="ap_on">热点已打开</string>
+    <string name="ap_off_and_wifi_off">蓝牙和热点关闭，请在设置中打开蓝牙和热点</string>
+    <string name="blue_tooth_off">蓝牙关闭，请在设置中打开蓝牙</string>
+    <string name="device_name_can_not_null">设备名不能为空</string>
+    <string name="device_name_not_match">设备名只能由中英文字符、数字、空格、下划线组成</string>
+    <string name="device_name_over_length">设备名最多不超过30个字符</string>
+    <string name="room_name_can_not_null">会议室名不能为空</string>
+    <string name="room_name_over_length">会议室名最多不超过14个字符</string>
+    <string name="room_name_not_match">会议室名只能由中英文字符、数字、空格、下划线组成</string>
+    <string name="ip_is_null">投屏失败，目标设备IP为空</string>
+    <string name="small_meeting_room_text">小型会议室：3米</string>
+    <string name="normal_meeting_room_text">中型会议室：5米</string>
+    <string name="big_meeting_room_text">大型会议室：10米</string>
+    <string name="close_projection">关闭</string>
+    <string name="ap_closed">未接入网络，请检查你的网络设置</string>
+    <string name="url_error">下载链接错误</string>
+    <string name="app_not_exit">应用不存在</string>
+    <string name="all_mute_ask_me"> 弹窗询问</string>
+    <string name="all_mute_no_ask_me"> 无需询问</string>
+    <string name="all_mute_auto_join"> 自动加入</string>
+    <string name="all_mute_acepte">默认接受</string>
+    <string name="all_mute_refuse">默认拒绝</string>
+    <string name="start_beto_01">开始您的无线共享体验</string>
+    <string name="start_beto_02">让协作更高效</string>
+    <string name="input_device_name">输入连接时显示的名字</string>
+    <string name="share_mode">分享模式</string>
+    <string name="share_file">共享文件</string>
+    <string name="file_manager_uninstall">未安装文件浏览器</string>
+    <string name="no_file_manager_apk">未安装文件管理器</string>
+    <string name="allow_control">允许控制此大屏</string>
+    <string name="defoult_name">智慧大屏</string>
+    <string name="join_meeting">加入会议</string>
+    <string name="device_name">设备名称：%s</string>
+    <string name="text_projection1">投屏</string>
+
+
+
+    <string name="local_device">(本机)</string>
+    <string name="net_disk">网盘</string>
+    <string name="beto_search_start">BeTo搜索波已发出...</string>
+    <string name="beto_search_end"  formatted="false"  >BeTo搜索完毕，频段发现%d个设备</string>
+    <string name="search_device">搜索设备</string>
+    <string name="share_meeting_space">共享会议空间</string>
+    <string name="open_beto_share_disk">打开BeTo共享盘</string>
+
+
+    <string name="speaker_is_use">扬声器正在使用中，请断开扬声器后关闭</string>
+    <string name="mic_is_use">麦克风正在使用中，请断开麦克风后关闭</string>
+    <string name="camera_is_use">摄像头正在使用中，请断开摄像头后关闭</string>
+    <string name="screencast_is_use">投屏正在使用中，请断开投屏后关闭</string>
+    <string name="remotectrl_is_use">遥控正在使用中，请断开遥控后关闭</string>
+
+    <string name="searching">正在搜索中</string>
+
+
+
+    <string name="signal_intensity">信号强度：%s</string>
+    <string name="signal_intensity_excellent">优</string>
+    <string name="signal_intensity_good">良</string>
+    <string name="signal_intensity_difference">差</string>
+    <string name="identifying_code_txt">识别码：%s</string>
+    <string name="identifying_txt">识别</string>
+    <string name="change_to_list_mode_txt">当前设备过多,即将切换为列表模式（%ss)</string>
+    <string name="change_txt">切换</string>
+    <string name="beto_group_title_txt">BeTo群-%s</string>
+    <string name="beto_exit_txt">退出</string>
+
+    <string name="face_to_face_create_group_txt">面对面建群</string>
+    <string name="face_to_face_create_group_remark_txt">和身边的朋友输入同样的四位数字,\n进入同一会议群</string>
+    <string name="dialog_title_exit_group_txt">确定离开当前Beto群?</string>
+    <string name="dialog_title_network_instability_txt">Wi-Fi网络不稳定，别着急，我们正在努恢复您的会议...</string>
+    <string name="dialog_exit_group_txt">退出群聊</string>
+    <string name="dialog_not_network_txt">网络中断,请重试</string>
+    <string name="dialog_join_meeting_title_txt">已搜索到【%s】,\n是否加入此会议室?</string>
+    <string name="dialog_join_meeting_title_content_txt">下次自动加入距离最近的会议室</string>
+    <string name="setting_meeting_search_room_how_deal_str">搜索到会议室时</string>
+
+    <string name="local_device_txt">本机</string>
+    <string name="cast_sound_str">投声音</string>
+    <string name="control_screen_txt">允许他人操控屏幕</string>
+
+    <string name="reject_screen_casting_request_txt">%s拒绝了你的投屏请求</string>
+    <string name="waiting_agree">等待%s同意 (%ss) ></string>
+    <string name="max_screen_6">最多只支持同事投6台设备</string>
+    <string name="exit_watch_str">%s已退出观看</string>
+    <string name="exit_watch_txt">退出观看</string>
+    <string name="req_pro_sceen_tip_title">%s想与您的设备进行投屏操作</string>
+    <string name="req_pro_sceen_tip_btn_receive">接收</string>
+    <string name="req_pro_sceen_tip_btn_refuse">拒绝</string>
+    <string name="req_pro_sceen_tip_btn_agree">同意%ss</string>
+    <string name="dialog_file_transfer_sending_title">文件发送中</string>
+    <string name="dialog_file_transfer_waiting_title">等待对方接收...</string>
+    <string name="dialog_file_transfer_sending_refuse">对方已拒绝</string>
+    <string name="dialog_file_transfer_send_complete">已发送</string>
+    <string name="dialog_file_transfer_receive_content">%s的%s想给你发送%s%s</string>
+    <string name="dialog_file_transfer_receive_pic">张照片</string>
+    <string name="dialog_file_transfer_receive_file">个文件</string>
+    <string name="dialog_file_transfer_receive_video">个视频</string>
+    <string name="dialog_file_transfer_receive_audio">个音频</string>
+    <string name="dialog_file_transfer_receive_zip">个压缩包</string>
+    <string name="dialog_file_transfer_file_receive">文件接收中</string>
+    <string name="dialog_file_transfer_file_receive_fail">网络中断,部分文件接收失败</string>
+    <string name="dialog_file_transfer_receive_complete">已接收</string>
+
+    <string name="dialog_file_transfer_sending_fail">网络中断,部分文件发送失败</string>
+    <string name="dialog_file_transfer_sending_other_side_cancel">对方已取消,部分文件发送失败</string>
+    <string name="sel_dev_tra_files_str">请选择设备传输文件</string>
+    <string name="select_all_str">全选</string>
+    <string name="screen_control_float_mini_window_controlling_str">正在控制%s</string>
+    <string name="reject_your_request_for_control_str">%s拒绝了你的控制请求</string>
+    <string name="control_failure_local_not_respond_str">控制失败,本机无响应</string>
+    <string name="who_is_being_controlled_by_str">%s正在被%s控制</string>
+    <string name="who_need_to_use_your_camera_str">%s需要使用你的摄像头,是否同意</string>
+    <string name="who_need_to_use_your_micro_str">%s需要使用你的麦克风,是否同意</string>
+    <string name="who_need_to_use_your_speaker_str">%s需要使用你的扬声器,是否同意</string>
+    <string name="beto_in_use_str">BeTo用户使用中</string>
+    <string name="devices_in_use_str">摄像头、扬声器、麦克风正在被使用,是否断开</string>
+
+    <string name="dis_device_list_model_all">全部</string>
+    <string name="dis_device_list_model_large_screen">大屏设备</string>
+    <string name="dis_device_list_model_computer">电脑设备</string>
+    <string name="dis_device_list_model_other">其他设备</string>
+
+
+    <string name="device_does_not_exist">设备不存在</string>
+    <string name="screen_share_big_screen">联想投屏软件（大屏端）</string>
+    <string name="newest_soft_version">最新软件版本</string>
+    <string name="fail_download">下载失败</string>
+    <string name="suface_fbl_str">分辨率:%s</string>
+    <string name="soft_version_text">软件版本</string>
+    <string name="check_version">检查更新</string>
+    <string name="label_unsign">无信号</string>
+
+    <string name="unknow_android_device">Android</string>
+    <string name="unknow_ios_device">iPhone</string>
+    <string name="unknow_pc_name">Windows</string>
+
+    <string name="over_max_projection_count">最多支持1路投屏</string>
+
+    <string name="screen_shot_err">截屏失败</string>
+    <string name="screen_shot_path">截图已保存至</string>
+    <string name="click_to_unlock">点击解锁</string>
+    <string name="unlock">已解锁</string>
+    <string name="soft_pc_title">电脑投屏</string>
+
+
+</resources>
