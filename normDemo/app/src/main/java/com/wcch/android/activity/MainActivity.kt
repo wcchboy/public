@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.*
+import android.provider.MediaStore
 import android.util.DisplayMetrics
 import android.view.View
 import android.view.View.OnClickListener
@@ -91,6 +92,49 @@ class MainActivity : Activity() {
                 startActivity(Intent(applicationContext,YaoKongQiActivity::class.java))
             }
         })
+        binding.testBtnSc.setOnClickListener(object : OnClickListener{
+            override fun onClick(p0: View?) {
+                startActivity(Intent(applicationContext,ScTestActivity::class.java))
+            }
+        })
+
+        binding.testBtnFile.setOnClickListener { //调用系统文件管理器打开指定路径目录
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            //intent.setDataAndType(Uri.fromFile(dir.getParentFile()), "file/*.txt");
+            //intent.setType("file/*.txt"); //华为手机mate7不支持
+            //intent.setDataAndType(Uri.fromFile(dir.getParentFile()), "file/*.txt");
+            //intent.setType("file/*.txt"); //华为手机mate7不支持
+//            intent.setType("");
+//            intent.putExtra(Intent.EXTRA_MIME_TYPES, MimeType.PPT);
+//            intent.addCategory(Intent.CATEGORY_OPENABLE)
+//            startActivityForResult(intent, 0)
+
+            val getIntent = Intent(Intent.ACTION_GET_CONTENT)
+            getIntent.type = "audio/*"
+
+            val pickIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+            pickIntent.type = "audio/*"
+
+            val chooserIntent = Intent.createChooser(getIntent, "")
+            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf(pickIntent))
+
+            //mActivity.startActivityForResult(chooserIntent, AppConstant.SET_WALLPAPER_RESULT_CODE)
+
+
+            val requestCode = 100
+            //intent.addCategory(Intent.CATEGORY_OPENABLE)
+            startActivityForResult(chooserIntent, requestCode)
+        }
+    }
+
+    object MimeType {
+        const val DOC = "application/msword"
+        const val DOCX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        const val XLS = "application/vnd.ms-excel application/x-excel"
+        const val XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        const val PPT = "application/vnd.ms-powerpoint"
+        const val PPTX = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        const val PDF = "application/pdf"
     }
     private fun startAn(){
 

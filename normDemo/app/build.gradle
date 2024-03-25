@@ -10,9 +10,9 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        configurations.all {
-            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
-        }
+//        configurations.all {
+//            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+//        }
         applicationId "com.wcch.android"
         minSdkVersion 25
         targetSdkVersion 31
@@ -48,12 +48,13 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    implementation 'androidx.core:core-ktx:+'
+    implementation 'androidx.core:core-ktx:1.6.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'org.apache.httpcomponents:httpcore:4.4.4'
 
+    implementation 'com.google.android.material:material:1.5.0'
     //implementation 'com.alibaba:fastjson:2.0.3.android'
     implementation 'com.alibaba:fastjson:1.1.55.android'
     implementation 'com.google.code.gson:gson:2.8.0'
@@ -132,6 +133,7 @@ dependencies {
     // 协程 Android 支持库
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
 
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-rx3:1.5.0"
     // -----3----
     // lifecycle 对于协程的扩展封装
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -172,4 +174,60 @@ dependencies {
     debugImplementation 'com.github.markzhai:blockcanary-android:1.5.0'
     releaseImplementation 'com.github.markzhai:blockcanary-no-op:1.5.0'
 
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5'
+    implementation 'com.googlecode.plist:dd-plist:1.23'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.bm.photoview:library:1.4.1'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    //implementation 'it.sauronsoftware.base64:base64:1.7.1' //找不到
+
+    // Eclipse Paho MQTT Android Service
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+
+    // GreenRobot EventBus
+    implementation 'org.greenrobot:eventbus:3.3.0'
+
+    implementation 'org.reactivestreams:reactive-streams:1.0.3'
+    implementation 'com.squareup.okio:okio:3.1.0'
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'com.jwenfeng.pulltorefresh:library:1.2.7'//Android 应用开发的下拉刷新库
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'//侧滑菜单库
+    implementation 'com.feezu.liuli:timeselector:1.1.4'//Android 下仿照Ios日期选择器
+    implementation 'com.jungly:gridPasswordView:0.3'//仿照支付宝支付密码控件
+    implementation 'org.zackratos:ultimatebar:1.1.3'//状态栏透明或者沉浸
+    implementation 'de.hdodenhof:circleimageview:3.1.0'//仿照支付宝支付密码控件
+    implementation 'com.jungly:gridPasswordView:0.3'//圆形图片加载
+    implementation 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'//下拉刷新上拉加载更多
+    implementation 'com.solid.skin:skinlibrary:2.0.0'//切换皮肤
+    implementation 'com.bigkoo:quicksidebar:1.0.3'//帮助快速查阅对应分组的侧边栏
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'//高仿Ios开关SwitchButton
+    implementation 'com.bigkoo:quicksidebar:1.0.3'//帮助快速查阅对应分组的侧边栏
+    //Glide的transformation库，拥有裁剪，着色，模糊，滤镜等多种转换效果
+    //https://github.com/wasabeef/glide-transformations
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+    //一个可以在Glide加载时很方便使用Palette的库
+    implementation 'com.github.florent37:glidepalette:2.1.2'//一个可以在Glide加载时很方便使用Palette的库
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'//Android显示GIF动画
+    //https://github.com/bingoogolapple/BGARefreshLayout-Android //下拉刷新（支持美团，幕客，微博，QQ等样式的下拉刷新）
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'//可以指定某个角为圆角的Imageview
+
+    implementation 'androidx.media:media:1.1.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'//应用开发的图片加载库
+    implementation 'com.yarolegovich:discrete-scrollview:1.5.1'//用于创建离散滚动效果的滚动视图
+    implementation 'com.google.zxing:core:3.4.1'
+    //https://github.com/DmcSDK/MediaPickerPoject //用户友好的界面，使得选择和预览媒体文件变得简单和直观 https://github.com/DmcSDK/MediaPickerPoject
+    implementation 'com.daimajia.numberprogressbar:library:1.4'//该库允许开发人员自定义进度条的外观和行为，包括进度条的颜色、大小、进度文本的样式等
+    // Android 应用中添加引导页功能的支持。通过该库，开发人员可以轻松地为他们的应用创建引导页面，以向用户展示应用的功能和特性。
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 }

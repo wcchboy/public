@@ -12,8 +12,21 @@ import leakcanary.LeakCanary
  */
 class App:Application() {
 
+    companion object {
+        var mApp :App?=null
+
+        fun getInstance(): App? {
+            return mApp
+        }
+    }
+
+
+
     override fun onCreate() {
         super.onCreate()
+        if (mApp == null){
+            mApp = this
+        }
         //1.3
         /*if (LeakCanary.isInAnalyzerProcess(this)) {
             return
@@ -43,4 +56,6 @@ class App:Application() {
         s?:return
 
     }
+
+
 }

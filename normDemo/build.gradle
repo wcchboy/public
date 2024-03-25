@@ -14,6 +14,8 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
         maven {
             allowInsecureProtocol = true
             url 'http://10.1.35.75:18081/nexus/repository/maven-releases'
@@ -58,6 +60,10 @@ buildscript {
         classpath "com.android.tools.build:gradle:4.1.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        //classpath "org.jetbrains.kotlin:kotlin-noarg:$kotlin_version"
+        //classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+        //allOpen插件 是为了解决kotlin转换成java final的问题
+        //noArgs是为了解决。kotlin转换成java没有无参勾构造的问题
     }
     tasks.withType(JavaCompile) {
         options.compilerArgs.addAll(['--add-opens', 'java.base/java.io=ALL-UNNAMED'])
@@ -68,6 +74,7 @@ buildscript {
         repositories {
             google()
             jcenter()
+            maven { url 'https://jitpack.io' }
             maven {
                 url 'https://dl.google.com/dl/android/maven2/'
                 //url 'https://maven.google.com/'

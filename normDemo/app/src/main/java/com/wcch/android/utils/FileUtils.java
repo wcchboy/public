@@ -11,7 +11,10 @@ import android.os.Environment;
 import android.os.StatFs;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.support.v4.media.session.PlaybackStateCompat;
 import android.util.Log;
+
+import com.wcch.android.R;
 
 import org.apache.http.util.EncodingUtils;
 
@@ -27,13 +30,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.RandomAccessFile;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -41,6 +47,8 @@ import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
+
+import androidx.exifinterface.media.ExifInterface;
 
 /**
  * @fileName FileUtils.java
@@ -56,6 +64,13 @@ public class FileUtils {
 	private String SDPATH;
 	/** The Constant BUFFER_SIZE. */
 	private static final int BUFFER_SIZE = 4096;
+
+	public static final String SPACE = " ";
+
+	public static final int TYPE_APK = 1;
+	public static final int TYPE_DOC = 0;
+	public static final int TYPE_ZIP = 2;
+
 
 	public String getSDPATH() {
 		return SDPATH;
@@ -346,6 +361,23 @@ public class FileUtils {
 			fileSizeString = df.format((double) size / 1073741824) + "G";
 		}
 		return fileSizeString;
+	}
+
+	public static String formatFileSize2(long j) {
+		if (j <= 0) {
+			return "0";
+		}
+		String[] strArr = {"b", "kb", "M", "G", ExifInterface.GPS_DIRECTION_TRUE};
+		double d = (double) j;
+		int log10 = (int) (Math.log10(d) / Math.log10(1024.0d));
+		StringBuilder sb = new StringBuilder();
+		DecimalFormat decimalFormat = new DecimalFormat("#,##0.##");
+		double pow = Math.pow(1024.0d, (double) log10);
+		Double.isNaN(d);
+		sb.append(decimalFormat.format(d / pow));
+		sb.append(SPACE);
+		sb.append(strArr[log10]);
+		return sb.toString();
 	}
 
 	/**
@@ -1363,5 +1395,123 @@ public class FileUtils {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static boolean isExists(String str) {
+		return new File(str).exists();
+	}
+
+	public static int getFileType(String str) {
+		String lowerCase = str.toLowerCase();
+		if (lowerCase.endsWith(".doc") || lowerCase.endsWith(".docx") || lowerCase.endsWith(".xls") || lowerCase.endsWith(".xlsx") || lowerCase.endsWith(".ppt") || lowerCase.endsWith(".pptx") || lowerCase.endsWith(".pdf")) {
+			return 0;
+		}
+		if (lowerCase.endsWith(".apk")) {
+			return 1;
+		}
+		return (lowerCase.endsWith(".zip") || lowerCase.endsWith(".rar") || lowerCase.endsWith(".tar") || lowerCase.endsWith(".gz")) ? 2 : -1;
+	}
+
+
+
+	public static List<File> split(File file) {
+		long length = file.length();
+		int i = (int) (length / PlaybackStateCompat.ACTION_SET_SHUFFLE_MODE);
+		if (length % PlaybackStateCompat.ACTION_SET_SHUFFLE_MODE > 0) {
+			i++;
+		}
+		ArrayList arrayList = new ArrayList();
+		try {
+			RandomAccessFile randomAccessFile = new RandomAccessFile(file, "r");
+			byte[] bArr = new byte[1024];
+			int i2 = 0;
+			while (i2 < i) {
+				StringBuilder sb = new StringBuilder();
+				sb.append(RouteInfo.ROOT_TEMP);
+				sb.append("_");
+				i2++;
+				sb.append(i2);
+				sb.append(getFileSuff(file.getAbsolutePath()));
+				File file2 = new File(sb.toString());
+				RandomAccessFile randomAccessFile2 = new RandomAccessFile(file2, "rw");
+				do {
+					int read = randomAccessFile.read(bArr);
+					if (read == -1) {
+						break;
+					}
+					randomAccessFile2.write(bArr, 0, read);
+				} while (randomAccessFile2.length() <= PlaybackStateCompat.ACTION_SET_SHUFFLE_MODE);
+				arrayList.add(file2);
+				randomAccessFile2.close();
+			}
+			randomAccessFile.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return arrayList;
+	}
+
+	public static String getFileSuff(String str) {
+		return str.substring(str.lastIndexOf("."), str.length());
+	}
+
+	public static String getModelFilePath(Context context, String str) {
+		copyFileIfNeed(context, str);
+		return context.getFilesDir().getAbsolutePath() + File.separator + str;
+	}
+
+	/* JADX WARNING: Removed duplicated region for block: B:40:0x0073 A[SYNTHETIC, Splitter:B:40:0x0073] */
+	/* JADX WARNING: Removed duplicated region for block: B:45:0x007d  */
+	/* JADX WARNING: Removed duplicated region for block: B:50:0x0089 A[SYNTHETIC, Splitter:B:50:0x0089] */
+	/* JADX WARNING: Removed duplicated region for block: B:55:0x0093 A[SYNTHETIC, Splitter:B:55:0x0093] */
+	/* JADX WARNING: Removed duplicated region for block: B:66:? A[RETURN, SYNTHETIC] */
+	/* Code decompiled incorrectly, please refer to instructions dump. */
+	private static void copyFileIfNeed(Context r7, String r8) {
+        /*
+        // Method dump skipped, instructions count: 158
+        */
+		throw new UnsupportedOperationException("Method not decompiled: com.pptouch.utils.FileUtils.copyFileIfNeed(android.content.Context, java.lang.String):void");
+	}
+
+	public static int getFileIconByPath(String str) {
+		String lowerCase = str.toLowerCase();
+		if (lowerCase.endsWith(".txt")) {
+			return R.drawable.type_text_big;
+		}
+		if (lowerCase.endsWith(".doc") || lowerCase.endsWith(".docx")) {
+			return R.drawable.icon_gaojie_doc_defalt;
+		}
+		if (lowerCase.endsWith(".xls") || lowerCase.endsWith(".xlsx")) {
+			return R.drawable.icon_gaojie_xls_defalt;
+		}
+		if (lowerCase.endsWith(".ppt") || lowerCase.endsWith(".pptx")) {
+			return R.drawable.icon_gaojie_ppt_defalt;
+		}
+		if (lowerCase.endsWith(".pdf")) {
+			return R.drawable.icon_gaojie_pdf_defalt;
+		}
+		return (lowerCase.endsWith(".htm") || lowerCase.endsWith(".html")) ? R.drawable.type_web_big : R.drawable.logo_1;
+	}
+
+	public static boolean isPicFile(String str) {
+		String lowerCase = str.toLowerCase();
+		return lowerCase.endsWith(".jpg") || lowerCase.endsWith(".jpeg") || lowerCase.endsWith(".png");
+	}
+
+	public static boolean isSDCardAvailable() {
+		return "mounted".equals(Environment.getExternalStorageState());
+	}
+
+	public static String getExtFromFilename(String str) {
+		int lastIndexOf = str.lastIndexOf(46);
+		return lastIndexOf != -1 ? str.substring(lastIndexOf + 1, str.length()) : "";
+	}
+
+	public static String getModifiedTime(File file) {
+		Calendar instance = Calendar.getInstance();
+		long lastModified = file.lastModified();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DateUtils.ymdhms);
+		instance.setTimeInMillis(lastModified);
+		return simpleDateFormat.format(instance.getTime());
 	}
 }
