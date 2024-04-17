@@ -59,16 +59,36 @@
             android:orientation="horizontal"
             android:paddingTop="8dp"
             android:gravity="bottom|center_horizontal">
+<!--            <com.wcch.android.view.CustomCheckBox-->
+<!--                android:id="@+id/tv_alert_second_content_ck1"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:background="@drawable/unchecked_checkbox"-->
+<!--                />-->
+            <CheckBox
+                android:id="@+id/tv_alert_second_content_ck2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/unchecked_checkbox"
+                android:button="@drawable/checkbox_sel" />
+            <CheckBox
+                android:id="@+id/tv_alert_second_content_ck24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/unchecked_checkbox"
+                android:layout_centerInParent="true"
+                style="@style/CustomCheckboxTheme"
+                android:checked="true"/>
             <CheckBox
                 android:id="@+id/tv_alert_second_content_ck11"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:scaleX="0.50"
                 android:scaleY="0.50"
+                android:checked="true"
                 android:layout_gravity="bottom"
                 android:buttonTint="@color/checkbox_color">
             </CheckBox>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

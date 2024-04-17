@@ -1,0 +1,22 @@
+<!-- checked_checkbox.xml -->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; 绘制√图标 &ndash;&gt;
+    <item android:id="@+id/checkmark" android:top="1dp" android:bottom="1dp" android:right="1dp" android:left="1dp">
+        <bitmap android:src="@drawable/checkbox_check_icon"/> &lt;!&ndash; 设置√图标 &ndash;&gt;
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp"/> &lt;!&ndash; 设置圆角半径 &ndash;&gt;
+            <stroke android:width="1dp" android:color="#FF3AB1EF"/> &lt;!&ndash; 设置边框宽度和颜色 &ndash;&gt;
+            <solid android:color="#FF04418A"/> &lt;!&ndash; 设置填充颜色 &ndash;&gt;
+        </shape>
+    </item>
+</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="4dp">
+        <bitmap
+            android:src="@drawable/checkbox_check_icon"
+            android:tint="?attr/colorControlActivated" />
+    </item>
+</layer-list>
