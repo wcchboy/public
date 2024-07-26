@@ -12,14 +12,16 @@ import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import com.alibaba.fastjson.JSON
+import com.google.gson.Gson
 import com.igrs.cleardata.Const
 import com.wcch.android.R
 import com.wcch.android.databinding.ActivityMainBinding
+import com.wcch.android.entity.FileBean
+import com.wcch.android.entity.ScrGroupReqBean
+import com.wcch.android.helper.SpiHelper
 import com.wcch.android.upgrade.OnlineUpgrade
-import com.wcch.android.utils.LogUtils
-import com.wcch.android.utils.PermissionUtil
-import com.wcch.android.utils.StringUtil
-import com.wcch.android.utils.WifiTools
+import com.wcch.android.utils.*
 import com.wcch.android.view.PopupMenu
 
 
@@ -48,6 +50,7 @@ class MainActivity : Activity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        fastJsonTest()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -125,6 +128,14 @@ class MainActivity : Activity() {
             //intent.addCategory(Intent.CATEGORY_OPENABLE)
             startActivityForResult(chooserIntent, requestCode)
         }
+
+       /* var adapter = SignalSourceAdapter()
+        binding.signalSourceRv.layoutManager = LinearLayoutManager(this)
+        binding.signalSourceRv.adapter = adapter*/
+
+        SpiHelper.getInstance().ConnectToHost()
+
+        test3()
     }
 
     object MimeType {
@@ -275,8 +286,41 @@ class MainActivity : Activity() {
 
     }
 
+
     fun test3(){
-        com.endo.common.utilcode.util.LogUtils.d()
+        //com.endo.common.utilcode.util.LogUtils.d()
+        LogUtils.d(TAG, "test3")
+        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).absolutePath+"/" //自定义底图保存路径
+        BmpUtils.toBmp(path,"city")
+        LogUtils.d(TAG, "test3 end")
+    }
+
+    fun fastJsonTest(){
+        val bean:FileBean = FileBean("test",3333,3333,3312331)
+        var str : String = JSON.toJSONString(bean)
+
+        LogUtils.d("fastJsonTest","fast test str : $str")
+        val gson = Gson()
+        val req = ScrGroupReqBean()
+        req.setName("test1") //屏幕分组名称
+
+        req.setLogCols(3) //每个物理屏幕划分成逻辑屏幕的列数
+
+        req.setLogRows(3) //每个物理屏幕划分成逻辑屏幕的行数
+
+        req.setEnable(1) //屏幕的使能标志，取值0/1
+
+        req.setPhyRows(3) //物理屏幕行数
+
+        req.setPhyCols(3) //物理屏幕列数
+
+        req.setDisplayMode(42) //显示模式
+
+        val str3 = JSON.toJSONString(req)
+        val str2 = gson.toJson(req)
+        LogUtils.d(TAG, "---- STR :$str3")
+        LogUtils.d(TAG, "---- STR2 :$str2")
+
     }
 
 }

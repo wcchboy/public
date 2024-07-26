@@ -246,4 +246,10 @@
             android:text="文件测"
             />
     </LinearLayout>
+<!--    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/signal_source_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y47"
+        android:layout_marginStart="@dimen/x177"/>-->
 </LinearLayout>
